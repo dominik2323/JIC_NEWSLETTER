@@ -2,5 +2,340 @@
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+  color: #502882;
 }
-</style><title>JIC Newsletter</title></head><body> <table><tbody><tr><td><h1>hell</h1></td></tr></tbody></table></body></html>
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.layout {
+  padding: 0 10px;
+}
+
+/* TYPO */
+.content * {
+  width: 90%;
+}
+
+.content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+.content h2 {
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.content h3 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+.content p.big {
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: normal;
+}
+
+.content p,
+.content li {
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.content li {
+  list-style: none;
+  padding: 0.25em 0;
+}
+
+.content h4 {
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.content span {
+  font-size: 10px;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* COLORS */
+.white-text {
+  color: #ffffff;
+}
+.gray-text {
+  color: #626262;
+}
+
+.pink-bg {
+  background-color: #f9d2be;
+}
+
+.yellow-bg {
+  background-color: #fdeeb8;
+}
+
+.blue-bg {
+  background-color: #a0dcfa;
+}
+
+.gray-bg {
+  background-color: #dcdcdc;
+}
+
+.green-bg {
+  background-color: #bedcc8;
+}
+
+.violet-bg {
+  background-color: #502882;
+}
+
+/* GRID */
+.grid-item-big,
+.grid-item-small {
+  padding-bottom: 40px;
+}
+
+.grid-item-big a {
+  text-decoration: none;
+}
+
+.grid-item-big h1 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.grid-item-big img {
+  margin-bottom: 20px;
+}
+
+.grid-item-big p {
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.grid-item-small .content > * {
+  width: 95%;
+}
+
+.grid-item-small h4 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.grid-item-small a {
+  text-decoration: none;
+}
+
+/* BTNS & TAGS */
+.tag {
+  background-color: #ffffff;
+  display: inline-block;
+  width: auto !important;
+  padding: 3px 5px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  height: 33px;
+  background-color: #502882;
+}
+
+.btn img {
+  display: inline;
+  height: 100%;
+  width: auto;
+}
+
+.btn div {
+  display: inline-block;
+  color: white;
+  padding: 7px 10px 11px;
+  height: 100%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+a.btn-secondary {
+  padding: 5px 10px;
+  display: inline;
+  text-decoration: none;
+  border: 1px solid #502882;
+}
+
+a.btn-secondary img {
+  width: 6px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.info-tags span {
+}
+
+/* SECTION */
+.section {
+  padding-bottom: 10px;
+}
+
+.section:last-child {
+  padding-bottom: 0;
+}
+
+.section-body {
+  padding: 30px 10px;
+}
+
+.section-header.big {
+  height: 100px;
+}
+.section-header {
+  height: 50px;
+  width: auto;
+  padding-bottom: 30px;
+}
+
+.section-top img {
+  margin-bottom: -1px;
+}
+
+.startup-item {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #502882;
+  text-decoration: none;
+}
+
+.startup-item:first-child {
+  padding-top: 0;
+}
+
+.startup-item h4 {
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+.startup-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.quote .quotes {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 24px;
+}
+
+.quote h3 {
+  margin-top: 20px;
+}
+
+.blockquote {
+  text-decoration: none;
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.blockquote h2 {
+  margin-bottom: 20px;
+}
+
+.figure-banner {
+  text-decoration: none;
+  display: block;
+  padding: 15px 0;
+}
+.figure-banner h1 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.figure-banner .btn {
+  margin-top: 20px;
+}
+.footer {
+  padding: 0 10px;
+}
+.footer > div {
+  padding: 30px 10px;
+}
+.socials {
+  width: 130px;
+  margin-top: 60px;
+}
+.socials img {
+  width: 24px;
+}
+
+.unsub {
+  font-size: 11px;
+  display: block;
+  margin: 20px 0;
+  text-align: center;
+}
+.newsletter {
+  min-width: 320px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero .logo img {
+  width: 77px;
+  height: auto;
+}
+
+.hero .date {
+  text-align: right;
+  vertical-align: top;
+}
+
+.hero-header td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hero-content > * {
+  padding: 10px 0;
+}
+.hero-content {
+  padding-bottom: 30px;
+}
+
+.show-in-browser td {
+  padding: 5px 0 12px;
+  text-align: center;
+}
+
+.pelmel h4 {
+  padding: 0.25em 0;
+}
+</style><title>JIC Newsletter</title></head><body> <table class="newsletter"><tr class="show-in-browser"> <td class="content gray-bg"><span><a class="gray-text" href="#">Zobrazte si newsletter v prohlížeči</a></span></td></tr><tr><td><table class="hero"><tr class="hero-header"><td class="logo"><img src="/images/jic-logo.png"></td><td class="date content"><span class="caption">květen 2022</span></td></tr><tr><td class="content hero-content layout" colspan="2"><h1 class="section-header">Zaří patří Velvet Innovation </h1><p class="body-text">Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek</p><h4 class="body-header">Top výběr z newsletteru</h4><ul><li>Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum</li><li>Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum</li><li>Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum</li></ul></td></tr></table></td></tr><tr><td class="layout"><table class="section"><tr class="section-top"><td><img src="images/noise-pink.png"></td></tr><tr><td class="section-body pink-bg"><img class="section-header" src="images/magazine-header.png"><table class="grid"><tr><td class="grid-item-big" colspan="2"><a href="#"><img src="images/placeholder.png"><div class="content"><span class="tag">jic talk</span><h1>Nadpis lorem ipsum</h1><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></div></a></td></tr><tr><td class="grid-item-small"><a href="#"><div class="content"><span class="tag">jic talk</span><h4>Nadpis lorem ipsum</h4><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></div></a></td><td class="grid-item-small"><a href="#"><div class="content"><span class="tag">jic talk</span><h4>Nadpis lorem ipsum</h4><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></div></a></td></tr><tr><td colspan="2"><a class="btn-secondary" href="#"> <span>všechny články</span><img src="images/arrow.png"></a></td></tr></table></td></tr></table><table class="section"><tr><td class="section-body yellow-bg"><img class="section-header" src="images/events-header.png"><table class="grid"><tr><td class="grid-item-big" colspan="2"><a href="#"><img src="images/placeholder.png"><div class="content"><span class="tag">jic talk</span><h1>Nadpis lorem ipsum</h1><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p><div class="info-tags"><span>19. 2. 2022, 19 – 21 hod.</span><span>brno-medlánky</span></div></div></a></td></tr><tr><td class="grid-item-small"><a href="#"><div class="content"><span class="tag">jic talk</span><h4>Nadpis lorem ipsum</h4><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p><div class="info-tags"><span>19. 2. 2022, 19 – 21 hod.</span><span>brno-medlánky</span></div></div></a></td><td class="grid-item-small"><a href="#"><div class="content"><span class="tag">jic talk</span><h4>Nadpis lorem ipsum</h4><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p><div class="info-tags"><span>19. 2. 2022, 19 – 21 hod.</span><span>brno-medlánky</span></div></div></a></td></tr><tr><td colspan="2"><a class="btn-secondary" href="#"> <span>všechny akce</span><img src="images/arrow.png"></a></td></tr></table></td></tr></table><table class="section"><tr><td class="section-body blue-bg"><img class="section-header big" src="images/pelmel-header.png"><table class="grid"><tr><td class="pelmel" colspan="2"><a href="http://"> <h4>Kiwi se vrací do hry</h4></a><a href="http://"> <h4>Musk koupil Twitter</h4></a><a href="http://"> <h4>Smartlook jde za moře</h4></a><a href="http://"> <h4>Solitea zase nakupuje</h4></a><a href="http://"> <h4>Kiwi se vrací do hry</h4></a><a href="http://"> <h4>Musk koupil Twitter</h4></a><a href="http://"> <h4>Smartlook jde za moře</h4></a><a href="http://"> <h4>Solitea zase nakupuje</h4></a></td></tr></table></td></tr></table><table class="section"><tr><td class="section-body gray-bg"><img class="section-header big" src="images/startup-header.png"><table class="grid"><tr><td class="content"><a class="startup-item" href="#"><h4>Nadpis lorem ipsum</h4><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></a><a class="startup-item" href="#"><h4>Nadpis lorem ipsum</h4><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></a><a class="startup-item" href="#"><h4>Nadpis lorem ipsum</h4><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></a></td></tr></table></td></tr></table><table class="section"><tr><td class="section-body green-bg"><img class="section-header" src="images/advices-header.png"><table class="grid"><tr><td><img src="/images/placeholder.png"><div class="quote content"><img class="quotes" src="/images/quotes.png"><p class="big">Tvoříme otevřený inovační ekosystém, který je domovem globálně úspěšných podnikatelů a inspiruje svět. Tvoříme otevřený inovační ekosystém, který je domovem globálně úspěšných podnikatelů a inspiruje svět. Tvoříme otevřený inovační ekosystém, který je domovem globálně úspěšných podnikatelů a inspiruje svět.</p><h3>Petr Chládek</h3><span>Ředitel JIC</span></div></td></tr></table></td></tr></table></td></tr><tr>               <td class="layout"><a class="blockquote" href="http://"> <h2>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</h2><div class="btn"> <img src="/images/btn-side.png"><div>Zjistit více</div><img src="/images/btn-side.png"></div></a></td></tr><tr><td class="layout"><a class="figure-banner" href="http://"> <img src="images/placeholder.png"><div class="content"><h1>Nadpis textového bloku</h1><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></div><div class="btn"> <img src="/images/btn-side.png"><div>Zjistit více</div><img src="/images/btn-side.png"></div></a><a class="figure-banner" href="http://"> <div class="content"><h1>Nadpis textového bloku</h1><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></div><div class="btn"> <img src="/images/btn-side.png"><div>Zjistit více</div><img src="/images/btn-side.png"></div></a></td></tr><tr><td class="footer"><div class="violet-bg"><img class="section-header big" src="images/contact-header.png"><p class="white-text">Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na <a href="#">marketing@jic.cz</a></p><table class="socials"><tr><td><a href="http://"> <img src="/images/fb.png"></a></td><td><a href="http://"> <img src="/images/in.png"></a></td><td><a href="http://"> <img src="/images/ig.png"></a></td><td><a href="http://"> <img src="/images/yt.png"></a></td><td><a href="http://"> <img src="/images/tw.png"></a></td></tr></table></div><img src="/images/noise-violet.png"></td></tr></table></body><a class="unsub violet-text" href="http://">Pro odhlášení z odběru newsletteru klikněte zde</a></html>

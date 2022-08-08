@@ -1,0 +1,302 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #502882;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.layout {
+  padding: 0 10px;
+}
+
+/* TYPO */
+.content * {
+  width: 90%;
+}
+
+.content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+.content h2 {
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.content h3 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+.content p.big {
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: normal;
+}
+
+.content p,
+.content li {
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.content li {
+  list-style: none;
+  padding: 0.25em 0;
+}
+
+.content h4 {
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.content span {
+  font-size: 10px;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* COLORS */
+.white-text {
+  color: #ffffff;
+}
+.gray-text {
+  color: #626262;
+}
+
+.pink-bg {
+  background-color: #f9d2be;
+}
+
+.yellow-bg {
+  background-color: #fdeeb8;
+}
+
+.blue-bg {
+  background-color: #a0dcfa;
+}
+
+.gray-bg {
+  background-color: #dcdcdc;
+}
+
+.green-bg {
+  background-color: #bedcc8;
+}
+
+.violet-bg {
+  background-color: #502882;
+}
+
+/* GRID */
+.grid-item-big,
+.grid-item-small {
+  padding-bottom: 40px;
+}
+
+.grid-item-big a {
+  text-decoration: none;
+}
+
+.grid-item-big h1 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.grid-item-big img {
+  margin-bottom: 20px;
+}
+
+.grid-item-big p {
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+.grid-item-small .content > * {
+  width: 95%;
+}
+
+.grid-item-small h4 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.grid-item-small a {
+  text-decoration: none;
+}
+
+/* BTNS & TAGS */
+.tag {
+  background-color: #ffffff;
+  display: inline-block;
+  width: auto !important;
+  padding: 3px 5px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  height: 33px;
+  background-color: #502882;
+}
+
+.btn img {
+  display: inline;
+  height: 100%;
+  width: auto;
+}
+
+.btn div {
+  display: inline-block;
+  color: white;
+  padding: 7px 10px 11px;
+  height: 100%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+a.btn-secondary {
+  padding: 5px 10px;
+  display: inline;
+  text-decoration: none;
+  border: 1px solid #502882;
+}
+
+a.btn-secondary img {
+  width: 6px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.info-tags span {
+}
+
+/* SECTION */
+.section {
+  padding-bottom: 10px;
+}
+
+.section:last-child {
+  padding-bottom: 0;
+}
+
+.section-body {
+  padding: 30px 10px;
+}
+
+.section-header.big {
+  height: 100px;
+}
+.section-header {
+  height: 50px;
+  width: auto;
+  padding-bottom: 30px;
+}
+
+.section-top img {
+  margin-bottom: -1px;
+}
+
+.startup-item {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #502882;
+  text-decoration: none;
+}
+
+.startup-item:first-child {
+  padding-top: 0;
+}
+
+.startup-item h4 {
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+.startup-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.quote .quotes {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 24px;
+}
+
+.quote h3 {
+  margin-top: 20px;
+}
+
+.blockquote {
+  text-decoration: none;
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.blockquote h2 {
+  margin-bottom: 20px;
+}
+
+.figure-banner {
+  text-decoration: none;
+  display: block;
+  padding: 15px 0;
+}
+.figure-banner h1 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.figure-banner .btn {
+  margin-top: 20px;
+}
+.footer {
+  padding: 0 10px;
+}
+.footer > div {
+  padding: 30px 10px;
+}
+.socials {
+  width: 130px;
+  margin-top: 60px;
+}
+.socials img {
+  width: 24px;
+}
+
+.unsub {
+  font-size: 11px;
+  display: block;
+  margin: 20px 0;
+  text-align: center;
+}

@@ -5,11 +5,216 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     style
-      include style.css
+      include components.css
+      include containers.css
     title JIC Newsletter
   body 
-    table
-      tbody
-        tr
-          td
-            h1 hell
+    table.newsletter
+      tr.show-in-browser 
+        td.content.gray-bg
+          span
+            a(href="#",class="gray-text") Zobrazte si newsletter v prohlížeči
+      tr
+        td
+          table.hero
+            tr.hero-header
+              td.logo
+                img(src="/images/jic-logo.png")
+              td.date.content
+                span.caption květen 2022
+            tr
+              td(colspan="2", class="content hero-content layout")
+                h1.section-header Zaří patří Velvet Innovation 
+                p.body-text Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek
+                h4.body-header Top výběr z newsletteru
+                ul
+                  li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
+                  li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
+                  li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
+      tr
+        td.layout
+          table.section
+            tr.section-top
+              td
+                img(src="images/noise-pink.png")
+            tr
+              td.section-body.pink-bg
+                img(src="images/magazine-header.png", class="section-header")
+                table.grid
+                  tr
+                    td(class="grid-item-big", colspan="2")
+                      a(href="#")
+                        img(src="images/placeholder.png")
+                        div.content
+                          span.tag jic talk
+                          h1 Nadpis lorem ipsum
+                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                  tr
+                    td.grid-item-small
+                      a(href="#")
+                        div.content
+                          span.tag jic talk
+                          h4 Nadpis lorem ipsum
+                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                    td.grid-item-small
+                      a(href="#")
+                        div.content
+                          span.tag jic talk
+                          h4 Nadpis lorem ipsum
+                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                  tr
+                    td(colspan="2")
+                      a(class="btn-secondary", href="#") 
+                        span všechny články
+                        img(src="images/arrow.png")
+          table.section
+            tr
+              td.section-body.yellow-bg
+                img(src="images/events-header.png", class="section-header")
+                table.grid
+                  tr
+                    td(class="grid-item-big", colspan="2")
+                      a(href="#")
+                        img(src="images/placeholder.png")
+                        div.content
+                          span.tag jic talk
+                          h1 Nadpis lorem ipsum
+                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                          div.info-tags
+                            span 19. 2. 2022, 19 – 21 hod.
+                            span brno-medlánky
+                  tr
+                    td.grid-item-small
+                      a(href="#")
+                        div.content
+                          span.tag jic talk
+                          h4 Nadpis lorem ipsum
+                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                          div.info-tags
+                            span 19. 2. 2022, 19 – 21 hod.
+                            span brno-medlánky
+                    td.grid-item-small
+                      a(href="#")
+                        div.content
+                          span.tag jic talk
+                          h4 Nadpis lorem ipsum
+                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                          div.info-tags
+                            span 19. 2. 2022, 19 – 21 hod.
+                            span brno-medlánky
+                  tr
+                    td(colspan="2")
+                      a(class="btn-secondary", href="#") 
+                        span všechny akce
+                        img(src="images/arrow.png")
+          table.section
+            tr
+              td.section-body.blue-bg
+                img(src="images/pelmel-header.png", class="section-header big")
+                table.grid
+                  tr
+                    td(class="pelmel", colspan="2")
+                      a(href="http://") 
+                        h4 Kiwi se vrací do hry
+                      a(href="http://") 
+                        h4 Musk koupil Twitter
+                      a(href="http://") 
+                        h4 Smartlook jde za moře
+                      a(href="http://") 
+                        h4 Solitea zase nakupuje
+                      a(href="http://") 
+                        h4 Kiwi se vrací do hry
+                      a(href="http://") 
+                        h4 Musk koupil Twitter
+                      a(href="http://") 
+                        h4 Smartlook jde za moře
+                      a(href="http://") 
+                        h4 Solitea zase nakupuje
+          table.section
+            tr
+              td.section-body.gray-bg
+                img(src="images/startup-header.png", class="section-header big")
+                table.grid
+                  tr
+                    td.content
+                      a(class="startup-item", href="#")
+                        h4 Nadpis lorem ipsum
+                        p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                      a(class="startup-item", href="#")
+                        h4 Nadpis lorem ipsum
+                        p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                      a(class="startup-item", href="#")
+                        h4 Nadpis lorem ipsum
+                        p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+          table.section
+            tr
+              td.section-body.green-bg
+                img(src="images/advices-header.png", class="section-header")
+                table.grid
+                  tr
+                    td
+                      img(src="/images/placeholder.png")
+                      div.quote.content
+                        img(src="/images/quotes.png", class="quotes")
+                        p.big Tvoříme otevřený inovační ekosystém, který je domovem globálně úspěšných podnikatelů a inspiruje svět. Tvoříme otevřený inovační ekosystém, který je domovem globálně úspěšných podnikatelů a inspiruje svět. Tvoříme otevřený inovační ekosystém, který je domovem globálně úspěšných podnikatelů a inspiruje svět.
+                        h3 Petr Chládek
+                        span Ředitel JIC
+      tr                
+        td.layout
+          a(href="http://", class="blockquote") 
+            h2 Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+            div(class="btn") 
+              img(src="/images/btn-side.png")
+              div Zjistit více
+              img(src="/images/btn-side.png")
+      tr
+        td.layout
+          a(href="http://", class="figure-banner") 
+            img(src="images/placeholder.png")
+            div.content
+              h1 Nadpis textového bloku
+              p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+            div(class="btn") 
+              img(src="/images/btn-side.png")
+              div Zjistit více
+              img(src="/images/btn-side.png")
+          a(href="http://", class="figure-banner") 
+            div.content
+              h1 Nadpis textového bloku
+              p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+            div(class="btn") 
+              img(src="/images/btn-side.png")
+              div Zjistit více
+              img(src="/images/btn-side.png")
+      tr
+        td.footer
+          div.violet-bg
+            img(src="images/contact-header.png", class="section-header big")
+            p.white-text Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na 
+              a(href="#") marketing@jic.cz
+            table.socials
+              tr
+                td
+                  a(href="http://") 
+                    img(src="/images/fb.png")
+                td
+                  a(href="http://") 
+                    img(src="/images/in.png")
+                td
+                  a(href="http://") 
+                    img(src="/images/ig.png")
+                td
+                  a(href="http://") 
+                    img(src="/images/yt.png")
+                td
+                  a(href="http://") 
+                    img(src="/images/tw.png")
+          img(src="/images/noise-violet.png")
+  a(href="http://", class="unsub violet-text") Pro odhlášení z odběru newsletteru klikněte zde
+
+
+
+
+
+
+

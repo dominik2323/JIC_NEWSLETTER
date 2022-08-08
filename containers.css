@@ -1,0 +1,38 @@
+.newsletter {
+  min-width: 320px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero .logo img {
+  width: 77px;
+  height: auto;
+}
+
+.hero .date {
+  text-align: right;
+  vertical-align: top;
+}
+
+.hero-header td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hero-content > * {
+  padding: 10px 0;
+}
+.hero-content {
+  padding-bottom: 30px;
+}
+
+.show-in-browser td {
+  padding: 5px 0 12px;
+  text-align: center;
+}
+
+.pelmel h4 {
+  padding: 0.25em 0;
+}

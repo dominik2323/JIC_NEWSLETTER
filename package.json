@@ -1,0 +1,26 @@
+{
+  "name": "email_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pug -w index.pug",
+    "build": "pug index.pug && node inlineCss.js",
+    "generate": "node inlineCss.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominik2323/EMAIL_TEMPLATE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominik2323/EMAIL_TEMPLATE/issues"
+  },
+  "homepage": "https://github.com/dominik2323/EMAIL_TEMPLATE#readme",
+  "dependencies": {
+    "inline-css": "^4.0.1",
+    "pug": "^3.0.2"
+  }
+}

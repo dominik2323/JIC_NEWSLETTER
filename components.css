@@ -2,7 +2,10 @@
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
+  background-image: url("https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/white-bg.png");
+  background-repeat: repeat;
   color: #502882;
+  box-sizing: border-box;
 }
 
 img {
@@ -153,9 +156,9 @@ a {
 .tag {
   background-color: #ffffff;
   display: inline-block;
-  width: auto !important;
+  width: auto;
   padding: 3px 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .btn {
@@ -174,9 +177,9 @@ a {
 .btn div {
   display: inline-block;
   color: white;
-  padding: 7px 10px 11px;
+  padding: 11px 10px 11px;
   height: 100%;
-  vertical-align: middle;
+  vertical-align: top;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
@@ -196,9 +199,6 @@ a.btn-secondary img {
   margin-left: 10px;
 }
 
-.info-tags span {
-}
-
 /* SECTION */
 .section {
   padding-bottom: 10px;
@@ -209,7 +209,7 @@ a.btn-secondary img {
 }
 
 .section-body {
-  padding: 30px 10px;
+  padding: 30px 10px 50px;
 }
 
 .section-header.big {
@@ -218,7 +218,7 @@ a.btn-secondary img {
 .section-header {
   height: 50px;
   width: auto;
-  padding-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .section-top img {
@@ -270,12 +270,16 @@ a.btn-secondary img {
 .figure-banner {
   text-decoration: none;
   display: block;
-  padding: 15px 0;
+  padding: 30px 0;
 }
+
+.figure-banner > img {
+  margin-bottom: 10px;
+}
+
 .figure-banner h1 {
   text-decoration: underline;
   margin-bottom: 10px;
-  margin-top: 30px;
 }
 .figure-banner .btn {
   margin-top: 20px;

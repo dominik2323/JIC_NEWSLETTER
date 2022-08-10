@@ -1,7 +1,7 @@
 .newsletter {
-  min-width: 320px;
   max-width: 800px;
   width: 100%;
+  background-color: white !important;
 }
 
 .hero .logo img {
@@ -12,6 +12,14 @@
 .hero .date {
   text-align: right;
   vertical-align: top;
+}
+
+.hero h1 {
+  font-size: 30px;
+  width: 80%;
+}
+.hero .body-text {
+  font-size: 18px;
 }
 
 .hero-header td {
@@ -29,7 +37,7 @@
 }
 
 .show-in-browser td {
-  padding: 5px 0 12px;
+  padding: 7px 0 12px;
   text-align: center;
 }
 

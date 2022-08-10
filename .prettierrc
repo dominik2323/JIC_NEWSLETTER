@@ -1,0 +1,9 @@
+{
+  "tabWidth": 2,
+  "printWidth": 1000,
+  "useTabs": false,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "bracketSameLine": true,
+  "jsxBracketSameLine": true,
+  "singleAttributePerLine": false
+}

@@ -162,9 +162,13 @@ table {
   display: inline-block;
   color: white;
   width: auto;
-  padding: 3px 5px;
+  padding: 5px 5px 3px;
   margin-bottom: 15px;
   text-transform: uppercase;
+}
+
+.info-tags span {
+  display: inline-block;
 }
 
 .btn {

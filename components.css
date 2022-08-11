@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+.newsletter {
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+}
+
 u + .body .screen {
   background: #000;
   mix-blend-mode: screen;
@@ -119,6 +125,45 @@ table {
   background-image: url("/images/violet-bg.png");
 }
 
+/* TOPBAR */
+.show-in-browser td {
+  padding: 7px 0 12px;
+  text-align: center;
+}
+
+/* HERO */
+.hero .logo img {
+  width: 77px;
+  height: auto;
+}
+
+.hero .date {
+  text-align: right;
+  vertical-align: top;
+}
+
+.hero h1 {
+  font-size: 30px;
+  width: 80%;
+}
+.hero .body-text {
+  font-size: 18px;
+}
+
+.hero-header td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hero-content > * {
+  padding: 10px 0;
+}
+.hero-content {
+  padding-bottom: 30px;
+}
+
 /* GRID */
 .grid-item-big,
 .grid-item-small {
@@ -175,26 +220,13 @@ table {
   display: inline-block;
   width: auto;
   height: 33px;
-  background-color: #502882;
   text-transform: uppercase;
 }
 
 .btn img {
-  display: inline;
   height: 100%;
+  object-fit: contain;
   width: auto;
-}
-
-.btn div {
-  display: inline-block;
-  color: white;
-  padding: 11px 10px 11px;
-  height: 100%;
-  vertical-align: top;
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 0.03em;
 }
 
 a.btn-secondary {
@@ -303,6 +335,7 @@ a.btn-secondary img {
   text-decoration: underline;
   margin-bottom: 10px;
 }
+
 .figure-banner .btn {
   margin-top: 20px;
 }
@@ -311,20 +344,27 @@ a.btn-secondary img {
 .footer {
   padding: 0 10px;
 }
+
 .footer > div {
   padding: 30px 10px;
 }
+
 .socials {
   width: 130px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
+
 .socials img {
-  width: 24px;
+  height: 24px;
 }
 
 .unsub {
   font-size: 11px;
   display: block;
   margin: 20px 0;
-  text-align: center;
+  padding-left: 20px;
+}
+
+.pelmel h4 {
+  padding: 0.25em 0;
 }

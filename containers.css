@@ -1,7 +1,8 @@
 .newsletter {
   max-width: 800px;
   width: 100%;
-  background-color: white !important;
+  background-color: white;
+  /* background-image: url("https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/white-bg.png"); */
 }
 
 .hero .logo img {

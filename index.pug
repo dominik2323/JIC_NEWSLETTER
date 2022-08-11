@@ -38,10 +38,13 @@ html(lang="en")
           table.section
             tr.section-top
               td
-                img(src=`${apiUrl}/images/noise-pink.png`)
+                img(src=`${apiUrl}/images/noise-pink.png`, class="section-noise")
+                div.section-header-outer.pink-bg
+                  div.diff
+                    div.screen
+                      img(src=`${apiUrl}/images/magazine-header.png`, class="section-header")
             tr
-              td.section-body.pink-bg
-                img(src=`${apiUrl}/images/magazine-header.png`, class="section-header")
+              td.section-body
                 table.grid
                   tr
                     td(class="grid-item-big", colspan="2")
@@ -71,8 +74,14 @@ html(lang="en")
                         img(src=`${apiUrl}/images/arrow.png`)
           table.section
             tr
-              td.section-body.yellow-bg
-                img(src=`${apiUrl}/images/events-header.png`, class="section-header")
+              td
+                img(src=`${apiUrl}/images/noise-blue.png`, class="section-noise")
+                div.diff
+                  div.screen
+                    div.section-header-outer.blue-bg
+                      img(src=`${apiUrl}/images/events-header.png`, class="section-header")
+            tr
+              td.section-body
                 table.grid
                   tr
                     td(class="grid-item-big", colspan="2")

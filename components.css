@@ -234,13 +234,10 @@ a.btn-secondary img {
   margin-bottom: -2px;
 }
 
-.section-header.big {
-  height: 100px;
-}
 .section-header {
   width: auto;
+  width: 100%;
   /* margin-bottom: 40px; */
-  height: 50px;
 }
 
 .section-header-outer {

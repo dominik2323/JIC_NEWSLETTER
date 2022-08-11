@@ -226,6 +226,10 @@ a.btn-secondary img {
   padding-top: 10px;
 }
 
+.section-body.margin {
+  padding-top: 30px;
+}
+
 .section-noise {
   margin-bottom: -2px;
 }

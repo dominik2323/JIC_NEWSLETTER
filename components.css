@@ -96,33 +96,27 @@ table {
 }
 
 .pink-bg {
-  background: #f9d2be;
   background-image: url("/images/pink-bg.png");
 }
 
 .yellow-bg {
-  background-color: #fdeeb8;
   background-image: url("/images/yellow-bg.png");
 }
 
 .blue-bg {
-  background-color: #a0dcfa;
   background-image: url("/images/blue-bg.png");
 }
 
 .gray-bg {
-  background-color: #dcdcdc;
   background-image: url("/images/gray-bg.png");
 }
 
 .green-bg {
-  background-color: #bedcc8;
-  background-image: url("/images/");
+  background-image: url("/images/green-bg.png");
 }
 
 .violet-bg {
-  background-color: #502882;
-  background-image: url("/images/");
+  background-image: url("/images/violet-bg.png");
 }
 
 /* GRID */

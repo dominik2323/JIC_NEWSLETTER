@@ -39,7 +39,13 @@ table {
 }
 
 /* TYPO */
-.content * {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content p,
+.content a,
+.content li {
   max-width: 90%;
 }
 
@@ -181,6 +187,8 @@ table {
 
 .grid-item-big img {
   margin-bottom: 20px;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .grid-item-big p {
@@ -212,8 +220,16 @@ table {
   text-transform: uppercase;
 }
 
+.info-tags {
+  padding-top: 10px;
+}
+
 .info-tags span {
-  display: inline-block;
+  display: block;
+}
+
+.generic-content {
+  padding: 30px 0;
 }
 
 .btn {
@@ -279,13 +295,21 @@ a.btn-secondary img {
 /* STARTUP */
 .startup-item {
   display: block;
-  padding: 20px 0;
-  border-bottom: 1px solid #502882;
   text-decoration: none;
 }
 
-.startup-item:first-child {
-  padding-top: 0;
+.divider {
+  background-color: #502882;
+  height: 1px;
+  border: 0;
+  margin: 20px 0;
+}
+.divider:last-child {
+  opacity: 0;
+  margin-top: 0;
+}
+.divider:first-child {
+  margin-top: 0;
 }
 
 .startup-item h4 {
@@ -312,8 +336,6 @@ a.btn-secondary img {
 .blockquote {
   text-decoration: none;
   display: block;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .blockquote h2 {
@@ -324,11 +346,17 @@ a.btn-secondary img {
 .figure-banner {
   text-decoration: none;
   display: block;
-  padding: 30px 0;
+}
+
+.generic-content td {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .figure-banner > img {
   margin-bottom: 10px;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .figure-banner h1 {
@@ -367,4 +395,9 @@ a.btn-secondary img {
 
 .pelmel h4 {
   padding: 0.25em 0;
+}
+
+.advices .human {
+  width: 100% !important;
+  height: auto !important;
 }

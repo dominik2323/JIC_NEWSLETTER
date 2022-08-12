@@ -10,206 +10,215 @@ html(lang="en")
       include components.css
     title JIC Newsletter
   body 
-    table.newsletter
-      tr.show-in-browser 
-        td.content.gray-bg
+    table(class="newsletter")
+      tr(class="show-in-browser")
+        td(class="content.gray-bg")
           span
-            a(href="http://",class="gray-text") Zobrazte si newsletter v prohlížeči
+            a(href="https://jic.cz", class="gray-text", mc:edit) Zobrazte si newsletter v prohlížeči
       tr
         td
-          table.hero
+          table(class="hero")
             tr.hero-header
               td.logo
                 img(src=`${apiUrl}/images/jic-logo.png`)
               td.date.content
-                span.caption květen 2022
+                span(class="caption", mc:edit) květen 2022
             tr
               td(colspan="2", class="content hero-content layout")
-                h1 Září patří Velvet Innovation 
-                p.body-text Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek
-                h4.body-header Top výběr z newsletteru
+                h1(mc:edit) Září patří Velvet Innovation 
+                p(class="body-text", mc:edit) Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek
+                h4(class="body-header", mc:edit) Top výběr z newsletteru
                 ul
-                  li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
-                  li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
-                  li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
+                  li(mc:repeatable) Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
       tr
-        td.layout
-          table.section
-            tr.section-top
+        td(class="layout")
+          table(class="section")
+            tr(class="section-top")
               td
                 img(src=`${apiUrl}/images/header-magazine.png`, class="section-header")
             tr
-              td.section-body
-                table.grid
+              td(class="section-body")
+                table(class="grid")
                   tr
                     td(class="grid-item-big", colspan="2")
-                      a(href="http://")
-                        img(src=`${apiUrl}/images/placeholder.png`)
-                        div.content
-                          span.tag jic talk
-                          h1 Nadpis lorem ipsum
-                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                  tr
-                    td.grid-item-small
-                      a(href="http://")
-                        div.content
-                          span.tag jic talk
-                          h4 Nadpis lorem ipsum
-                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                    td.grid-item-small
-                      a(href="http://")
-                        div.content
-                          span.tag jic talk
-                          h4 Nadpis lorem ipsum
-                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                      a(href="https://jic.cz", mc:edit)
+                        img(src=`${apiUrl}/images/placeholder.png`, mc:edit)
+                        div(class="content")
+                          span(class="tag", mc:edit) jic talk
+                          h1(mc:edit) Nadpis lorem ipsum
+                          p(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                  tr(mc:repeatable)
+                    td(class="grid-item-small")
+                      a(href="https://jic.cz")
+                        div(class="content")
+                          span(class="tag", mc:edit) jic talk
+                          h4(mc:edit) Nadpis lorem ipsum
+                          p(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                    td(class="grid-item-small", mc:hideable)
+                      a(href="https://jic.cz")
+                        div(class="content")
+                          span(class="tag", mc:edit) jic talk
+                          h4(mc:edit) Nadpis lorem ipsum
+                          p(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
                   tr
                     td(colspan="2")
-                      a(class="btn", href="http://") 
+                      a(class="btn", href="https://jic.cz") 
                         img(src=`${apiUrl}/images/btn-all-articles.png`)
-          table.section
+          table(class="section")
             tr
               td
                 img(src=`${apiUrl}/images/header-events.png`, class="section-header")
             tr
-              td.section-body
-                table.grid
+              td(class="section-body")
+                table(class="grid")
                   tr
                     td(class="grid-item-big", colspan="2")
-                      a(href="http://")
-                        img(src=`${apiUrl}/images/placeholder.png`)
-                        div.content
-                          span.tag jic talk
-                          h1 Nadpis lorem ipsum
-                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                          div.info-tags
+                      a(href="https://jic.cz")
+                        img(src=`${apiUrl}/images/placeholder.png`, mc:edit)
+                        div(class="content")
+                          span(class="tag jic talk", mc:edit)
+                          h1(mc:edit) Nadpis lorem ipsum
+                          p(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                          div(class="info-tags", mc:edit)
                             span 19. 2. 2022, 19 – 21 hod.
                             span brno-medlánky
-                  tr
-                    td.grid-item-small
-                      a(href="http://")
-                        div.content
-                          span.tag jic talk
-                          h4 Nadpis lorem ipsum
-                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                          div.info-tags
-                            span 19. 2. 2022, 19 – 21 hod.
-                            span brno-medlánky
-                    td.grid-item-small
-                      a(href="http://")
-                        div.content
-                          span.tag jic talk
-                          h4 Nadpis lorem ipsum
-                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                          div.info-tags
-                            span 19. 2. 2022, 19 – 21 hod.
-                            span brno-medlánky
+                  tr(mc:repeatable)
+                    td(class="grid-item-small")
+                      a(href="https://jic.cz")
+                        div(class="content")
+                          span(class="tag", mc:edit) jic talk
+                          h4(mc:edit) Nadpis lorem ipsum
+                          p(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                          div(class="info-tags")
+                            span(mc:edit, mc-repeatable) 19. 2. 2022, 19 – 21 hod.
+                            span(mc:edit, mc-repeatable) brno-medlánky
+                    td(class="grid-item-small", mc:hideable)
+                      a(href="https://jic.cz")
+                        div(class="content")
+                          span(class="tag", mc:edit) jic talk
+                          h4(mc:edit) Nadpis lorem ipsum
+                          p(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                          div(class="info-tags")
+                            span(mc:edit, mc-repeatable) 19. 2. 2022, 19 – 21 hod.
+                            span(mc:edit, mc-repeatable) brno-medlánky
                   tr
                     td(colspan="2")
-                      a(class="btn", href="http://") 
+                      a(class="btn", href="https://jic.cz") 
                         img(src=`${apiUrl}/images/btn-all-events.png`)
-          table.section
+          table(class="section")
             tr
               td
                 img(src=`${apiUrl}/images/header-pelmel.png`, class="section-header")
             tr
-              td.section-body.margin
-                table.grid
+              td(class="section-body margin")
+                table(class="grid")
                   tr
                     td(class="pelmel", colspan="2")
-                      a(href="http://") 
-                        h4 Kiwi se vrací do hry
-                      a(href="http://") 
-                        h4 Musk koupil Twitter
-                      a(href="http://") 
-                        h4 Smartlook jde za moře
-                      a(href="http://") 
-                        h4 Solitea zase nakupuje
-                      a(href="http://") 
-                        h4 Kiwi se vrací do hry
-                      a(href="http://") 
-                        h4 Musk koupil Twitter
-                      a(href="http://") 
-                        h4 Smartlook jde za moře
-                      a(href="http://") 
-                        h4 Solitea zase nakupuje
-          table.section
+                      a(href="https://jic.cz") 
+                        h4(mc:edit, mc:repeatable) Kiwi se vrací do hry
+                      a(href="https://jic.cz") 
+                        h4(mc:edit, mc:repeatable) Musk koupil Twitter
+                      a(href="https://jic.cz") 
+                        h4(mc:edit, mc:repeatable) Smartlook jde za moře
+                      a(href="https://jic.cz") 
+                        h4(mc:edit, mc:repeatable) Solitea zase nakupuje
+                      a(href="https://jic.cz") 
+                        h4(mc:edit, mc:repeatable) Kiwi se vrací do hry
+                      a(href="https://jic.cz") 
+                        h4(mc:edit, mc:repeatable) Musk koupil Twitter
+                      a(href="https://jic.cz") 
+                        h4(mc:edit, mc:repeatable) Smartlook jde za moře
+                      a(href="https://jic.cz") 
+                        h4(mc:edit, mc:repeatable) Solitea zase nakupuje
+          table(class="section")
             tr
               td
                 img(src=`${apiUrl}/images/header-startup.png`, class="section-header")
             tr
-              td.section-body.margin
-                table.grid
+              td(class="section-body margin")
+                table(class="grid")
                   tr
-                    td.content
-                      a(class="startup-item", href="http://")
-                        h4 Nadpis lorem ipsum
-                        p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                      a(class="startup-item", href="http://")
-                        h4 Nadpis lorem ipsum
-                        p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                      a(class="startup-item", href="http://")
-                        h4 Nadpis lorem ipsum
-                        p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-          table.section
+                    td(class="content")
+                      div(mc:repeatable)
+                        a(class="startup-item", href="https://jic.cz")
+                          h4(mc:edit) Nadpis lorem ipsum
+                          p(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                        hr(class="divider")
+                      div(mc:repeatable)
+                        a(class="startup-item", href="https://jic.cz")
+                          h4(mc:edit) Nadpis lorem ipsum
+                          p(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                        hr(class="divider")
+                      div(mc:repeatable)
+                        a(class="startup-item", href="https://jic.cz")
+                          h4(mc:edit) Nadpis lorem ipsum
+                          p(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                        hr(class="divider")
+          table(class="section")
             tr
               td
                 img(src=`${apiUrl}/images/header-advices.png`, class="section-header")
             tr
-              td.section-body
-                table.grid
+              td(class="section-body")
+                table(class="grid")
                   tr
-                    td
-                      img(src=`${apiUrl}/images/placeholder.png`)
-                      div.quote.content
-                        img(src=`${apiUrl}/images/quotes.png`, class="quotes")
-                        p.big Tvoříme otevřený inovační ekosystém, který je domovem globálně úspěšných podnikatelů a inspiruje svět. Tvoříme otevřený inovační ekosystém, který je domovem globálně úspěšných podnikatelů a inspiruje svět. Tvoříme otevřený inovační ekosystém, který je domovem globálně úspěšných podnikatelů a inspiruje svět.
-                        h3 Petr Chládek
-                        span Ředitel JIC
-      tr                
-        td.layout
-          a(href="http://", class="blockquote") 
-            h2 Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-            div(class="btn") 
-              img(src=`${apiUrl}/images/btn-learn-more.png`)
+                    td.advices
+                      img(src=`${apiUrl}/images/placeholder.png`, class="human" mc:edit)
+                      div(class="quote content")
+                        img(src=`${apiUrl}/images/quotes.png`, class="quotes", mc:edit)
+                        p(class="big", mc:edit) Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů). Lipsum tak pracovně znázorňuje text v ukázkových maketách (tzv. mock-up) předtím, než bude do hotového návrhu vložen smysluplný obsah. 
+                        h3(mc:edit) Petr Chládek
+                        span(mc:edit) Ředitel JIC
       tr
-        td.layout
-          a(href="http://", class="figure-banner") 
-            img(src=`${apiUrl}/images/placeholder.png`)
-            div.content
-              h1 Nadpis textového bloku
-              p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-            div(class="btn") 
-              img(src=`${apiUrl}/images/btn-learn-more.png`)
-          a(href="http://", class="figure-banner") 
-            div.content
-              h1 Nadpis textového bloku
-              p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-            div(class="btn") 
-              img(src=`${apiUrl}/images/btn-learn-more.png`)
+        td(class="generic-content")
+          table
+            tr(mc:hideable)                
+              td(class="layout")
+                a(href="https://jic.cz", class="blockquote") 
+                  h2(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                  div(class="btn") 
+                    img(src=`${apiUrl}/images/btn-learn-more.png`)
+            tr(mc:hideable)                
+              td(class="layout")
+                a(href="https://jic.cz", class="figure-banner") 
+                  div(class="content")
+                    h1 Nadpis textového bloku
+                    p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                  div(class="btn") 
+                    img(src=`${apiUrl}/images/btn-learn-more.png`)
+            tr(mc:hideable)
+              td(class="layout")
+                a(href="https://jic.cz", class="figure-banner") 
+                  img(src=`${apiUrl}/images/placeholder.png`)
+                  div(class="content")
+                    h1 Nadpis textového bloku
+                    p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                  div(class="btn") 
+                    img(src=`${apiUrl}/images/btn-learn-more.png`)
       tr
         td.footer
           img(src=`${apiUrl}/images/header-footer.png`, class="section-header")
-          div.section-body.margin
-            p Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na 
-              a(href="http://") marketing@jic.cz
-            table.socials
+          div(class="section-body margin")
+            p(mc:edit) Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na 
+              a(href="https://jic.cz") marketing@jic.cz
+            table(class="socials")
               tr
                 td
-                  a(href="http://") 
+                  a(href="https://jic.cz") 
                     img(src=`${apiUrl}/images/fb-dark-cutted.png`)
                 td
-                  a(href="http://") 
+                  a(href="https://jic.cz") 
                     img(src=`${apiUrl}/images/in-dark.png`)
                 td
-                  a(href="http://") 
+                  a(href="https://jic.cz") 
                     img(src=`${apiUrl}/images/ig-dark.png`)
                 td
-                  a(href="http://") 
+                  a(href="https://jic.cz") 
                     img(src=`${apiUrl}/images/yt-dark.png`)
                 td
-                  a(href="http://") 
+                  a(href="https://jic.cz") 
                     img(src=`${apiUrl}/images/tw-dark.png`)
-  a(href="http://", class="unsub violet-text") Pro odhlášení z odběru newsletteru klikněte zde
+  a(href="https://jic.cz", class="unsub violet-text", mc:edit) Pro odhlášení z odběru newsletteru klikněte zde
 
 
 

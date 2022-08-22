@@ -178,6 +178,7 @@ table {
 
 .grid-item-big a {
   text-decoration: none;
+  color: #502882;
 }
 
 .grid-item-big h1 {
@@ -295,7 +296,20 @@ a.btn-secondary img {
 /* STARTUP */
 .startup-item {
   display: block;
+}
+
+.startup-item p {
   text-decoration: none;
+}
+
+.startup-item h4 {
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+.startup-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .divider {
@@ -310,16 +324,6 @@ a.btn-secondary img {
 }
 .divider:first-child {
   margin-top: 0;
-}
-
-.startup-item h4 {
-  padding-bottom: 10px;
-  text-decoration: underline;
-}
-
-.startup-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
 }
 
 /* QUOTES */

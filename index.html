@@ -1,442 +1,927 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><style>* {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  background-repeat: repeat;
-  color: #502882;
-  box-sizing: border-box;
-}
-
-.newsletter {
-  width: 600px;
-}
-
-u + .body .screen {
-  background: #000;
-  mix-blend-mode: screen;
-}
-u + .body .diff {
-  background: #000;
-  mix-blend-mode: difference;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-table {
-  width: 100%;
-  border-spacing: 0;
-}
-
-.layout {
-  /* padding: 0 10px; */
-}
-
-/* TYPO */
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content p,
-.content a,
-.content li {
-  width: 90%;
-}
-
-.content h1 {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.2em;
-}
-
-.content h2 {
-  font-size: 18px;
-  line-height: 1.2em;
-  font-weight: bold;
-}
-
-.content h3 {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 1.2em;
-}
-
-.content p.big {
-  font-size: 14px;
-  line-height: 1.2em;
-  font-weight: normal;
-}
-
-.content p,
-.content li {
-  font-size: 12px;
-  line-height: 1.2em;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-.content li {
-  list-style: none;
-  padding: 0.25em 0;
-}
-
-.content h4 {
-  font-size: 14px;
-  line-height: 1.2em;
-  font-weight: bold;
-}
-
-.content span {
-  font-size: 10px;
-  line-height: 1.2em;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* COLORS */
-.white-text {
-  color: #ffffff;
-}
-.gray-text {
-  color: #626262;
-}
-
-.pink-bg {
-  background-image: url("/images/pink-bg.png");
-}
-
-.yellow-bg {
-  background-image: url("/images/yellow-bg.png");
-}
-
-.blue-bg {
-  background-image: url("/images/blue-bg.png");
-}
-
-.gray-bg {
-  background-image: url("/images/gray-bg.png");
-}
-
-.green-bg {
-  background-image: url("/images/green-bg.png");
-}
-
-.violet-bg {
-  background-image: url("/images/violet-bg.png");
-}
-
-/* SPACES */
-
-.space {
-}
-.space.xs {
-  width: 5px;
-  height: 5px;
-}
-.space.s {
-  width: 10px;
-  height: 10px;
-}
-.space.m {
-  width: 15px;
-  height: 15px;
-}
-.space.l {
-  width: 20px;
-  height: 20px;
-}
-.space.xl {
-  width: 30px;
-  height: 30px;
-}
-.space.xxl {
-  width: 40px;
-  height: 40px;
-}
-.space.xxxl {
-  width: 60px;
-  height: 60px;
-}
-.space.tag {
-  width: 10px;
-  height: 30px;
-}
-
-/* TOPBAR */
-.show-in-browser td {
-  /* padding: 7px 0 12px; */
-  text-align: center;
-}
-
-/* HERO */
-.hero .logo img {
-  width: 77px;
-  height: auto;
-}
-
-.hero .date {
-  text-align: right;
-  vertical-align: top;
-}
-
-.hero h1 {
-  font-size: 30px;
-  width: 80%;
-}
-.hero .body-text {
-  font-size: 18px;
-}
-
-.hero-header td {
-  /* padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px; */
-}
-
-.hero-content > * {
-  /* padding: 10px 0; */
-}
-.hero-content {
-  /* padding-bottom: 30px; */
-}
-
-/* GRID */
-.grid-item-big,
-.grid-item-small {
-  /* padding-bottom: 40px; */
-}
-
-.grid-item-big a {
-  text-decoration: none;
-  color: #502882;
-}
-
-.grid-item-big h1 {
-  text-decoration: underline;
-  /* margin-bottom: 10px; */
-}
-
-.grid-item-big .cover {
-  /* margin-bottom: 20px; */
-  width: 100% !important;
-  height: auto !important;
-}
-
-.grid-item-big p {
-  font-size: 18px;
-  letter-spacing: 0.01em;
-}
-
-.grid-item-small h4 {
-  text-decoration: underline;
-  /* margin-bottom: 10px; */
-}
-
-.grid-item-small a {
-  text-decoration: none;
-}
-
-/* BTNS & TAGS */
-.tag {
-  background-color: #502882;
-  /* display: inline-block; */
-  width: auto;
-  /* padding: 5px 5px 3px;
-  margin-bottom: 15px; */
-  text-transform: uppercase;
-}
-.tag span {
-  color: white;
-}
-
-.info-tags {
-  /* padding-top: 10px; */
-}
-
-.info-tags span {
-  display: block;
-}
-
-.generic-content {
-  /* padding: 30px 0; */
-}
-
-.btn {
-  display: inline-block;
-  width: auto;
-  text-transform: uppercase;
-}
-
-.btn img {
-  display: block;
-  height: 100%;
-  height: 33px;
-  object-fit: contain;
-  width: auto;
-}
-
-a.btn-secondary {
-  /* padding: 5px 10px; */
-  display: inline;
-  text-decoration: none;
-  border: 1px solid #502882;
-  text-transform: uppercase;
-  font-size: 10px;
-}
-
-a.btn-secondary img {
-  width: 6px;
-  display: inline-block;
-  /* margin-left: 10px; */
-}
-
-/* SECTION */
-.section {
-  /* padding-bottom: 10px; */
-}
-
-.section:last-child {
-  /* padding-bottom: 0; */
-}
-
-.section-body {
-  /* padding: 30px 10px 50px; */
-  /* padding-top: 10px; */
-}
-
-.section-body.margin {
-  /* padding-top: 30px; */
-}
-
-.section-noise {
-  /* margin-bottom: -2px; */
-}
-
-.section-header {
-  width: auto;
-  width: 100%;
-  /* margin-bottom: 40px; */
-}
-
-.section-header-outer {
-  /* padding: 20px 10px; */
-}
-
-/* STARTUP */
-.startup-item {
-  display: block;
-}
-
-.startup-item p {
-  text-decoration: none;
-}
-
-.startup-item h4 {
-  /* padding-bottom: 10px; */
-  text-decoration: underline;
-}
-
-.startup-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.divider {
-  background-color: #502882;
-  height: 1px;
-  border: 0;
-  /* margin: 20px 0; */
-}
-.divider:last-child {
-  opacity: 0;
-  /* margin-top: 0; */
-}
-.divider:first-child {
-  /* margin-top: 0; */
-}
-
-/* QUOTES */
-.quote .quotes {
-  /* margin-bottom: 20px;
-  margin-top: 30px; */
-  width: 24px;
-}
-
-.quote h3 {
-  /* margin-top: 20px; */
-}
-
-.blockquote {
-  text-decoration: none;
-  display: block;
-}
-
-.blockquote h2 {
-  /* margin-bottom: 20px; */
-}
-
-/* FIGURE BANNER */
-.figure-banner {
-  text-decoration: none;
-  display: block;
-}
-
-.generic-content td {
-  /* padding-top: 30px;
-  padding-bottom: 30px; */
-}
-
-.figure-banner > img {
-  margin-bottom: 10px;
-  width: 100% !important;
-  height: auto !important;
-}
-
-.figure-banner h1 {
-  text-decoration: underline;
-  /* margin-bottom: 10px; */
-}
-
-.figure-banner .btn {
-  /* margin-top: 20px; */
-}
-
-/* FOOTER */
-.footer {
-  /* padding: 0 10px; */
-}
-
-.footer > div {
-  /* padding: 30px 10px; */
-}
-
-.socials {
-  width: 130px;
-  /* margin-top: 30px; */
-}
-
-.socials img {
-  height: 24px;
-}
-
-.unsub {
-  font-size: 11px;
-  display: block;
-  /* margin: 20px 0; */
-  /* padding-left: 20px; */
-}
-
-.pelmel h4 {
-  /* padding: 0.25em 0; */
-}
-
-.advices .human {
-  width: 100% !important;
-  height: auto !important;
-}
-</style><title>JIC Newsletter</title></head><body> <table class="newsletter"><tr><td width="10"><img class="space s" src="/images/spaces/xs.png"></td><td><table><tr><td><img class="space xs" src="/images/spaces/xs.png"></td></tr><tr class="show-in-browser"><td class="content.gray-bg"><span><a class="gray-text" href="*|ARCHIVE|*" mc:edit="show-in-browser">Zobrazte si newsletter v prohlížeči</a></span></td></tr><tr><td><img class="space xs" src="/images/spaces/xs.png"></td></tr><tr><td><table class="hero"><tr><td><img class="space xs" src="/images/spaces/xs.png"></td></tr><tr class="hero-header"><td class="logo"><img src="/images/jic-logo.png"></td><td class="date content"><span class="caption" mc:edit="date">květen 2022</span></td></tr><tr><td><img class="space xxl" src="/images/spaces/xxl.png"></td></tr><tr><td class="content hero-content layout" colspan="2"><h1 mc:edit="hero-header">Září patří Velvet Innovation </h1><br><p class="body-text" mc:edit="hero-perex">Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek</p><br><h4 class="body-header" mc:edit="hero-subheader">Top výběr z newsletteru</h4><br><ul><li mc:repeatable mc:edit="hero-bullet">Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum</li></ul></td></tr><tr><td><img class="space xxl" src="/images/spaces/xxl.png"></td></tr></table></td></tr><tr><td class="layout"><table class="section"><tr class="section-top"><td><img class="section-header" src="/images/header-magazine.png"></td></tr><tr><td class="section-body"><table class="grid"><tr><td class="grid-item-big" colspan="2" mc:edit="magazine-big-item"><a href="https://jic.cz"><img class="cover" src="/images/placeholder.png"><img class="space l" src="/images/spaces/l.png"><div class="content"><table class="tag"> <tr><td><img class="space tag" src="/images/spaces/tag-space.png"></td><td><span>jic talk</span></td><td><img class="space tag" src="/images/spaces/tag-space.png"></td></tr></table><br><h1>Nadpis lorem ipsum</h1><br><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></div></a></td></tr><tr><td class="space"><img class="space xxxl" src="/images/spaces/xxxl.png"></td></tr><tr mc:repeatable><td class="grid-item-small" mc:edit="magazine-items-col-1"><a href="https://jic.cz"><div class="content"><table class="tag"> <tr><td><img class="space tag" src="/images/spaces/tag-space.png"></td><td><span>jic talk</span></td><td><img class="space tag" src="/images/spaces/tag-space.png"></td></tr></table><br><h4>Nadpis lorem ipsum</h4><br><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></div></a></td><td class="grid-item-small" mc:edit="magazine-items-col-2"><a href="https://jic.cz"><div class="content"><table class="tag"> <tr><td><img class="space tag" src="/images/spaces/tag-space.png"></td><td><span>jic talk</span></td><td><img class="space tag" src="/images/spaces/tag-space.png"></td></tr></table><br><h4>Nadpis lorem ipsum</h4><br><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></div></a></td></tr><tr><td><img class="space xxl" src="/images/spaces/xxl.png"></td></tr><tr><td colspan="2"><a class="btn" href="https://www.jic.cz/magazin/"> <img src="/images/btn-all-articles.png"></a></td></tr></table></td></tr></table><table class="section"><tr><td><img class="section-header" src="/images/header-events.png"></td></tr><tr><td class="section-body"><table class="grid"><tr><td class="grid-item-big" colspan="2" mc:edit="events-big"><a href="https://jic.cz"><img src="/images/placeholder.png"><img class="space l" src="/images/spaces/l.png"><div class="content"><table class="tag"> <tr><td><img class="space tag" src="/images/spaces/tag-space.png"></td><td><span>jic talk</span></td><td><img class="space tag" src="/images/spaces/tag-space.png"></td></tr></table><br><h1>Nadpis lorem ipsum</h1><br><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p><br><div class="info-tags"><span>19. 2. 2022, 19 – 21 hod.</span><span>brno-medlánky</span></div></div></a></td></tr><tr><td><img class="space xxl" src="/images/spaces/xxl.png"></td></tr><tr mc:repeatable><td class="grid-item-small" mc:edit="events-items-col-1"><a href="https://jic.cz"><div class="content"><table class="tag"> <tr><td><img class="space tag" src="/images/spaces/tag-space.png"></td><td><span>jic talk</span></td><td><img class="space tag" src="/images/spaces/tag-space.png"></td></tr></table><br><h4>Nadpis lorem ipsum</h4><br><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p><br><div class="info-tags"><span>19. 2. 2022, 19 – 21 hod.</span><span>brno-medlánky</span></div></div></a></td><td class="grid-item-small" mc:edit="events-items-col-2"><a href="https://jic.cz"><div class="content"><table class="tag"> <tr><td><img class="space tag" src="/images/spaces/tag-space.png"></td><td><span>jic talk</span></td><td><img class="space tag" src="/images/spaces/tag-space.png"></td></tr></table><br><h4>Nadpis lorem ipsum</h4><br><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p><br><div class="info-tags"><span>19. 2. 2022, 19 – 21 hod.</span><span>brno-medlánky</span></div></div></a></td></tr><tr><td><img class="space xxl" src="/images/spaces/xxl.png"></td></tr><tr><td colspan="2"><a class="btn" href="https://www.jic.cz/akce/"> <img src="/images/btn-all-events.png"></a></td></tr></table></td></tr></table><table class="section"><tr><td><img class="section-header" src="/images/header-pelmel.png"></td></tr><tr> <td><img class="space xxl" src="/images/spaces/xxl.png"></td></tr><tr><td class="section-body margin"><table class="grid"><tr><td class="pelmel" colspan="2"><div mc:edit="pelmel-item-1"><a href="https://jic.cz"> <h4>Kiwi se vrací do hry</h4></a></div></td></tr></table></td></tr><tr> <td><img class="space xxl" src="/images/spaces/xxl.png"></td></tr></table><table class="section"><tr><td><img class="section-header" src="/images/header-startup.png"></td></tr><tr><td class="section-body margin"><table class="grid"><tr mc:repeatable><td class="content"><div mc:edit="startup-item-1"><img class="space xl" src="/images/spaces/xl.png"><a class="startup-item" href="https://jic.cz"><h4>Nadpis lorem ipsum</h4><br><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></a><img class="space xl" src="/images/spaces/xl.png"><hr class="divider"></div></td></tr></table></td></tr></table><table class="section"><tr><td><img class="section-header" src="/images/header-advices.png"></td></tr><tr><td class="section-body"><table class="grid"><tr><td class="advices" mc:edit="human"><img class="human" src="/images/placeholder.png"><div class="quote content"><img class="quotes" src="/images/quotes.png"><p class="big">Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů). Lipsum tak pracovně znázorňuje text v ukázkových maketách (tzv. mock-up) předtím, než bude do hotového návrhu vložen smysluplný obsah. </p><h3>Petr Chládek</h3><span>Ředitel JIC</span></div></td></tr></table></td></tr></table></td></tr><tr><td class="generic-content"><table><tr mc:hideable mc:repeatable>               <td class="layout" mc:edit="blockquote"><a class="blockquote" href="https://jic.cz"> <h2 mc:edit>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</h2><div class="btn"> <img src="/images/btn-learn-more.png"></div></a></td></tr><tr mc:hideable mc:repeatable>               <td class="layout" mc:edit="image-text-block"><a class="figure-banner" href="https://jic.cz"> <div class="content"><h1>Nadpis textového bloku</h1><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></div><div class="btn"> <img src="/images/btn-learn-more.png"></div></a></td></tr><tr mc:hideable mc:repeatable><td class="layout" mc:edit="text-block"><a class="figure-banner" href="https://jic.cz"> <img src="/images/placeholder.png"><div class="content"><h1>Nadpis textového bloku</h1><p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p></div><div class="btn"> <img src="/images/btn-learn-more.png"></div></a></td></tr></table></td></tr><tr><td class="footer"><img class="section-header" src="/images/header-footer.png"><div class="section-body margin"><p mc:edit="cta">Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na <a href="mailto: marketing@jic.cz">marketing@jic.cz</a></p><table class="socials"><tr><td><a href="https://www.facebook.com/jic.brno"> <img src="/images/fb-dark-cutted.png"></a></td><td><a href="https://www.linkedin.com/company/jic-brno/"> <img src="/images/in-dark.png"></a></td><td><a href="https://www.instagram.com/jic_brno/"> <img src="/images/ig-dark.png"></a></td><td><a href="https://www.youtube.com/user/JICbrno"> <img src="/images/yt-dark.png"></a></td><td><a href="https://twitter.com/JIC_Brno"> <img src="/images/tw-dark.png"></a></td></tr></table></div></td></tr></table></td><td width="10"><img class="space" src="/images/spaces/xs.png"></td></tr></table></body><a class="unsub violet-text" href="*|UNSUB|*" mc:edit="unsub">Pro odhlášení z odběru newsletteru klikněte zde</a></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        background-repeat: repeat;
+        color: #502882;
+        box-sizing: border-box;
+      }
+
+      .newsletter {
+        width: 600px;
+      }
+
+      u + .body .screen {
+        background: #000;
+        mix-blend-mode: screen;
+      }
+
+      u + .body .diff {
+        background: #000;
+        mix-blend-mode: difference;
+      }
+
+      img {
+        height: auto;
+        object-fit: contain;
+        display: block;
+      }
+
+      table {
+        border-spacing: 0;
+      }
+
+      .layout {
+      }
+
+      /* TYPO */
+      .content h1,
+      .content h2,
+      .content h3,
+      .content h4,
+      .content p,
+      .content a,
+      .content li {
+        width: 90%;
+      }
+
+      .content h1 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.2em;
+      }
+
+      .content h2 {
+        font-size: 18px;
+        line-height: 1.2em;
+        font-weight: bold;
+      }
+
+      .content h3 {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.2em;
+      }
+
+      .content p.big {
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: normal;
+      }
+
+      .content p,
+      .content li {
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: normal;
+        text-decoration: none;
+      }
+
+      .content li {
+        list-style: none;
+        padding: 0.25em 0;
+      }
+
+      .content h4 {
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: bold;
+      }
+
+      .content span,
+      .content div {
+        font-size: 10px;
+        line-height: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      /* COLORS */
+      .white-text {
+        color: #ffffff;
+      }
+
+      .gray-text {
+        color: #626262;
+      }
+
+      .pink-bg {
+        background-image: url("/images/pink-bg.png");
+      }
+
+      .yellow-bg {
+        background-image: url("/images/yellow-bg.png");
+      }
+
+      .blue-bg {
+        background-image: url("/images/blue-bg.png");
+      }
+
+      .gray-bg {
+        background-image: url("/images/gray-bg.png");
+      }
+
+      .green-bg {
+        background-image: url("/images/green-bg.png");
+      }
+
+      .violet-bg {
+        background-image: url("/images/violet-bg.png");
+      }
+
+      /* SPACES */
+      br {
+        line-height: 50%;
+      }
+
+      .space {
+        display: block;
+      }
+
+      .space.xs {
+        width: 5px;
+        height: 5px;
+      }
+
+      .space.s {
+        width: 10px;
+        height: 10px;
+      }
+
+      .space.m {
+        width: 15px;
+        height: 15px;
+      }
+
+      .space.l {
+        width: 20px;
+        height: 20px;
+      }
+
+      .space.xl {
+        width: 30px;
+        height: 30px;
+      }
+
+      .space.xxl {
+        width: 40px;
+        height: 40px;
+      }
+
+      .space.xxxl {
+        width: 60px;
+        height: 60px;
+      }
+
+      .space.tag {
+        width: 10px;
+        height: 30px;
+      }
+
+      /* TOPBAR */
+      .show-in-browser td {
+        text-align: center;
+      }
+
+      /* HERO */
+      .hero .logo img {
+        width: 77px;
+        height: auto;
+      }
+
+      .hero .date {
+        text-align: right;
+        vertical-align: top;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+        width: 80%;
+      }
+
+      .hero .body-text {
+        font-size: 18px;
+      }
+
+      .hero-header td {
+      }
+
+      .hero-content > * {
+      }
+
+      .hero-content {
+      }
+
+      /* GRID */
+      .grid-item-big,
+      .grid-item-small {
+      }
+
+      .grid-item-small {
+        width: 290px;
+      }
+
+      .grid-item-big a {
+        text-decoration: none;
+        color: #502882;
+      }
+
+      .grid-item-big h1 {
+        text-decoration: underline;
+      }
+
+      .grid-item-big .cover {
+        width: 600px !important;
+        height: auto !important;
+      }
+
+      .grid-item-big p {
+        font-size: 18px;
+        letter-spacing: 0.01em;
+      }
+
+      .grid-item-small h4 {
+        text-decoration: underline;
+      }
+
+      .grid-item-small a {
+        text-decoration: none;
+      }
+
+      /* BTNS & TAGS */
+      .tag {
+        background-color: #502882;
+        width: auto;
+        text-transform: uppercase;
+      }
+
+      .tag span {
+        color: white;
+      }
+
+      .info-tags {
+      }
+
+      .info-tags span {
+        display: block;
+      }
+
+      .generic-content {
+      }
+
+      .btn {
+        display: inline-block;
+        width: auto;
+        text-transform: uppercase;
+      }
+
+      .btn img {
+        display: block;
+        height: 33px;
+        object-fit: contain;
+      }
+
+      a.btn-secondary {
+        display: inline;
+        text-decoration: none;
+        border: 1px solid #502882;
+        text-transform: uppercase;
+        font-size: 10px;
+      }
+
+      a.btn-secondary img {
+        width: 6px;
+        display: inline-block;
+      }
+
+      /* SECTION */
+      .section {
+      }
+
+      .section:last-child {
+      }
+
+      .section-body {
+      }
+
+      .section-body.margin {
+      }
+
+      .section-noise {
+      }
+
+      .section-header {
+        width: 600px;
+      }
+
+      .section-header-outer {
+      }
+
+      /* STARTUP */
+      .startup-item {
+        display: block;
+      }
+
+      .startup-item p {
+        text-decoration: none;
+      }
+
+      .startup-item h4 {
+        text-decoration: underline;
+      }
+
+      .startup-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .divider {
+        background-color: #502882;
+        height: 1px;
+        border: 0;
+      }
+
+      .divider:last-child {
+        opacity: 0;
+      }
+
+      .divider:first-child {
+      }
+
+      /* QUOTES */
+      .quote .quotes {
+        width: 24px;
+      }
+
+      .quote h3 {
+      }
+
+      .blockquote {
+        text-decoration: none;
+        display: block;
+      }
+
+      .blockquote h2 {
+      }
+
+      /* FIGURE BANNER */
+      .figure-banner {
+        text-decoration: none;
+        display: block;
+      }
+
+      .generic-content td {
+      }
+
+      .figure-banner .cover {
+        margin-bottom: 10px;
+        width: 600px !important;
+        height: auto !important;
+      }
+
+      .figure-banner h1 {
+        text-decoration: underline;
+      }
+
+      .figure-banner .btn {
+      }
+
+      /* FOOTER */
+      .footer p {
+        width: 90%;
+      }
+
+      .footer > div {
+      }
+
+      .socials {
+        width: 130px;
+      }
+
+      .socials img {
+        height: 24px;
+      }
+
+      .unsub {
+        font-size: 11px;
+        display: block;
+      }
+
+      .pelmel h4 {
+      }
+
+      .advices .human {
+        width: 600px !important;
+        height: auto !important;
+      }
+    </style>
+    <title>JIC Newsletter</title>
+  </head>
+
+  <body>
+    <table class="newsletter" width="600">
+      <tr>
+        <td width="10"><img class="space s" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/s.png" width="10" height="10" /></td>
+        <td>
+          <table>
+            <tr>
+              <td><img class="space xs" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xs.png" width="5" height="5" /></td>
+            </tr>
+            <!---->
+            <!-- Show in browser-->
+            <!---->
+            <tr class="show-in-browser">
+              <td class="content.gray-bg">
+                <span><a class="gray-text" href="*|ARCHIVE|*" mc:edit="show-in-browser">Zobrazte si newsletter v prohlížeči</a></span>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="space xxxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxxl.png" width="60" height="60" /></td>
+            </tr>
+            <!---->
+            <!-- Hero section-->
+            <!---->
+            <tr>
+              <td>
+                <table class="hero">
+                  <tr>
+                    <td><img class="space xs" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xs.png" width="5" height="5" /></td>
+                  </tr>
+                  <tr class="hero-header">
+                    <td class="logo"><img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/jic-logo.png" width="77" height="23" /></td>
+                    <td class="date content"><span class="caption" mc:edit="date">květen 2022</span></td>
+                  </tr>
+                  <tr>
+                    <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                  </tr>
+                  <tr>
+                    <td class="content hero-content layout" colspan="2">
+                      <h1 mc:edit="hero-header">Září patří Velvet Innovation</h1>
+                      <br />
+                      <p class="body-text" mc:edit="hero-perex">Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek</p>
+                      <br />
+                      <h4 class="body-header" mc:edit="hero-subheader">Top výběr z newsletteru</h4>
+                      <br />
+                      <ul>
+                        <li mc:repeatable mc:edit="hero-bullet">Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="layout">
+                <!---->
+                <!-- Magazine-->
+                <!---->
+                <table class="section">
+                  <tr class="section-top">
+                    <td><img class="section-header" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/header-magazine.png" width="600" height="226" /></td>
+                  </tr>
+                  <tr>
+                    <td class="section-body">
+                      <table class="grid">
+                        <tr>
+                          <!---->
+                          <!-- Magazine big item-->
+                          <!---->
+                          <td class="grid-item-big" colspan="2" mc:edit="magazine-big-item">
+                            <a href="https://jic.cz"
+                              ><img class="cover" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/placeholder.png" width="600" height="600" /><img class="space l" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/l.png" width="20" height="20" />
+                              <div class="content">
+                                <table class="tag">
+                                  <tr>
+                                    <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                    <td><span>jic talk</span></td>
+                                    <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                  </tr>
+                                </table>
+                                <br />
+                                <h1>Nadpis lorem ipsum</h1>
+                                <br />
+                                <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
+                              </div>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="space"><img class="space xxxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxxl.png" width="60" height="60" /></td>
+                        </tr>
+                        <tr mc:repeatable>
+                          <!---->
+                          <!-- Magazine small item-->
+                          <!---->
+                          <td class="grid-item-small" mc:edit="magazine-items-col-1">
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="https://jic.cz">
+                                    <div class="content">
+                                      <table class="tag">
+                                        <tr>
+                                          <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                          <td><span>jic talk</span></td>
+                                          <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                        </tr>
+                                      </table>
+                                      <br />
+                                      <h4>Nadpis lorem ipsum</h4>
+                                      <br />
+                                      <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
+                                    </div>
+                                  </a>
+                                </td>
+                                <td><img class="space m" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/m.png" width="15" height="15" /></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!---->
+                          <!-- Magazine small item-->
+                          <!---->
+                          <td class="grid-item-small" mc:edit="magazine-items-col-2">
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="https://jic.cz">
+                                    <div class="content">
+                                      <table class="tag">
+                                        <tr>
+                                          <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                          <td><span>jic talk</span></td>
+                                          <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                        </tr>
+                                      </table>
+                                      <br />
+                                      <h4>Nadpis lorem ipsum</h4>
+                                      <br />
+                                      <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
+                                    </div>
+                                  </a>
+                                </td>
+                                <td><img class="space m" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/m.png" width="15" height="15" /></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <a class="btn" href="https://www.jic.cz/magazin/"> <img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/btn-all-articles.png" width="142" height="33" /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!---->
+                <!-- Events-->
+                <!---->
+                <table class="section">
+                  <tr>
+                    <td><img class="section-header" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/header-events.png" width="600" height="226" /></td>
+                  </tr>
+                  <tr>
+                    <td class="section-body">
+                      <table class="grid">
+                        <tr>
+                          <!---->
+                          <!-- Events big item-->
+                          <!---->
+                          <td class="grid-item-big" colspan="2" mc:edit="events-big">
+                            <a href="https://jic.cz"
+                              ><img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/placeholder.png" width="600" height="600" /><img class="space l" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/l.png" width="20" height="20" />
+                              <div class="content">
+                                <table class="tag">
+                                  <tr>
+                                    <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                    <td><span>jic talk</span></td>
+                                    <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                  </tr>
+                                </table>
+                                <br />
+                                <h1>Nadpis lorem ipsum</h1>
+                                <br />
+                                <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
+                                <br />
+                                <div class="info-tags">
+                                  <div>19. 2. 2022, 19 – 21 hod.</div>
+                                  <divspan>brno-medlánky</divspan>
+                                </div>
+                              </div>
+                            </a>
+                          </td>
+                          <td><img class="space m" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/m.png" width="15" height="15" /></td>
+                        </tr>
+                        <tr>
+                          <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                        </tr>
+                        <tr mc:repeatable>
+                          <!-- -->
+                          <!-- Events small item-->
+                          <!---->
+                          <td class="grid-item-small" mc:edit="events-items-col-1">
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="https://jic.cz">
+                                    <div class="content">
+                                      <table class="tag">
+                                        <tr>
+                                          <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                          <td><span>jic talk</span></td>
+                                          <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                        </tr>
+                                      </table>
+                                      <br />
+                                      <h4>Nadpis lorem ipsum</h4>
+                                      <br />
+                                      <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
+                                      <br />
+                                      <div class="info-tags">
+                                        <div>19. 2. 2022, 19 – 21 hod.</div>
+                                        <div>brno-medlánky</div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </td>
+                                <td><img class="space m" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/m.png" width="15" height="15" /></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- -->
+                          <!-- Events small item-->
+                          <!---->
+                          <td class="grid-item-small" mc:edit="events-items-col-2">
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="https://jic.cz">
+                                    <div class="content">
+                                      <table class="tag">
+                                        <tr>
+                                          <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                          <td><span>jic talk</span></td>
+                                          <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
+                                        </tr>
+                                      </table>
+                                      <br />
+                                      <h4>Nadpis lorem ipsum</h4>
+                                      <br />
+                                      <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
+                                      <br />
+                                      <div class="info-tags">
+                                        <div>19. 2. 2022, 19 – 21 hod.</div>
+                                        <div>brno-medlánky</div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </td>
+                                <td><img class="space m" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/m.png" width="15" height="15" /></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                        </tr>
+                        <tr>
+                          <td colspan="2">
+                            <a class="btn" href="https://www.jic.cz/akce/"> <img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/btn-all-events.png" width="125" height="33" /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!---->
+                <!-- Pelmel-->
+                <!---->
+                <table class="section">
+                  <tr>
+                    <td><img class="section-header" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/header-pelmel.png" width="600" height="295" /></td>
+                  </tr>
+                  <tr>
+                    <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                  </tr>
+                  <tr>
+                    <td class="section-body margin">
+                      <table class="grid">
+                        <tr>
+                          <td class="pelmel" colspan="2">
+                            <div mc:edit="pelmel-item-1">
+                              <a href="https://jic.cz">
+                                <h4>Kiwi se vrací do hry</h4>
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                  </tr>
+                </table>
+                <!---->
+                <!-- Startup-->
+                <!---->
+                <table class="section">
+                  <tr>
+                    <td><img class="section-header" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/header-startup.png" width="600" height="295" /></td>
+                  </tr>
+                  <tr>
+                    <td class="section-body margin">
+                      <table class="grid">
+                        <tr mc:repeatable>
+                          <td class="content">
+                            <div mc:edit="startup-item-1">
+                              <img class="space xl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xl.png" width="30" height="30" /><a class="startup-item" href="https://jic.cz">
+                                <h4>Nadpis lorem ipsum</h4>
+                                <br />
+                                <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p> </a
+                              ><img class="space xl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xl.png" width="30" height="30" />
+                              <hr class="divider" />
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!---->
+                <!-- Advices-->
+                <!---->
+                <table class="section">
+                  <tr>
+                    <td><img class="section-header" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/header-advices.png" width="600" height="226" /></td>
+                  </tr>
+                  <tr>
+                    <td class="section-body">
+                      <table class="grid">
+                        <tr>
+                          <td class="advices" mc:edit="human">
+                            <table>
+                              <tr>
+                                <td><img class="human" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/placeholder.png" width="600" height="600" /></td>
+                              </tr>
+                              <tr>
+                                <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                              </tr>
+                              <tr>
+                                <td class="quote content"><img class="quotes" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/quotes.png" width="24" height="20" /></td>
+                              </tr>
+                              <tr>
+                                <td><img class="space m" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/m.png" width="15" height="15" /></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p class="big">Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů). Lipsum tak pracovně znázorňuje text v ukázkových maketách (tzv. mock-up) předtím, než bude do hotového návrhu vložen smysluplný obsah.</p>
+                                  <br />
+                                  <h3>Petr Chládek</h3>
+                                  <span>Ředitel JIC</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="generic-content">
+                <!---->
+                <!-- Generic content-->
+                <!---->
+                <table>
+                  <!---->
+                  <!-- Blockquote-->
+                  <!---->
+                  <tr mc:hideable mc:repeatable>
+                    <td class="layout" mc:edit="blockquote">
+                      <img class="space xxxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxxl.png" width="60" height="60" /><a class="blockquote" href="https://jic.cz">
+                        <h2 mc:edit>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</h2>
+                        <br />
+                        <div class="btn"><img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/btn-learn-more.png" width="105" height="33" /></div> </a
+                      ><img class="space xxxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxxl.png" width="60" height="60" />
+                    </td>
+                  </tr>
+                  <!---->
+                  <!-- Text block-->
+                  <!---->
+                  <tr mc:hideable mc:repeatable>
+                    <td class="layout" mc:edit="image-text-block">
+                      <a class="figure-banner" href="https://jic.cz">
+                        <div class="content">
+                          <h1>Nadpis textového bloku</h1>
+                          <br />
+                          <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
+                        </div>
+                        <br />
+                        <div class="btn"><img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/btn-learn-more.png" width="105" height="33" /></div>
+                        <img class="space xxxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxxl.png" width="60" height="60" />
+                      </a>
+                    </td>
+                  </tr>
+                  <!---->
+                  <!-- Image text block-->
+                  <!---->
+                  <tr mc:hideable mc:repeatable>
+                    <td class="layout" mc:edit="text-block">
+                      <a class="figure-banner" href="https://jic.cz">
+                        <table>
+                          <tr>
+                            <td><img class="cover" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/placeholder.png" width="600" height="600" /></td>
+                          </tr>
+                          <tr>
+                            <td><img class="space m" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/m.png" width="15" height="15" /></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="content">
+                                <h1>Nadpis textového bloku</h1>
+                                <br />
+                                <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
+                              </div>
+                              <br />
+                              <div class="btn"><img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/btn-learn-more.png" width="105" height="33" /></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><img class="space xxxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxxl.png" width="60" height="60" /></td>
+                          </tr>
+                        </table>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <!---->
+              <!-- Footer-->
+              <!---->
+              <td class="footer">
+                <img class="section-header" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/header-footer.png" width="600" height="386" />
+                <div class="section-body margin">
+                  <img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" />
+                  <p mc:edit="cta">Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na <a href="mailto: marketing@jic.cz">marketing@jic.cz</a></p>
+                  <img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" />
+                  <table class="socials">
+                    <tr>
+                      <td>
+                        <a href="https://www.facebook.com/jic.brno"> <img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/fb-dark-cutted.png" width="15" height="24" /></a>
+                      </td>
+                      <td>
+                        <a href="https://www.linkedin.com/company/jic-brno/"> <img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/in-dark.png" width="24" height="24" /></a>
+                      </td>
+                      <td>
+                        <a href="https://www.instagram.com/jic_brno/"> <img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/ig-dark.png" width="24" height="24" /></a>
+                      </td>
+                      <td>
+                        <a href="https://www.youtube.com/user/JICbrno"> <img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/yt-dark.png" width="24" height="24" /></a>
+                      </td>
+                      <td>
+                        <a href="https://twitter.com/JIC_Brno"> <img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/tw-dark.png" width="24" height="24" /></a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><img class="space xl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xl.png" width="30" height="30" /></td>
+            </tr>
+            <!---->
+            <!-- Unsub-->
+            <!---->
+            <tr>
+              <td><a class="unsub violet-text" href="*|UNSUB|*" mc:edit="unsub">Pro odhlášení z odběru newsletteru klikněte zde</a></td>
+            </tr>
+            <tr>
+              <td><img class="space xl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xl.png" width="30" height="30" /></td>
+            </tr>
+          </table>
+        </td>
+        <td width="10"><img class="space" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/s.png" width="10" height="10" /></td>
+      </tr>
+    </table>
+  </body>
+</html>

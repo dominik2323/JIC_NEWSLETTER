@@ -36,7 +36,7 @@ html(lang="en")
               td
                 table(class="hero")
                   tr
-                    td
+                    td(colspan="2")
                       img(src=`${apiUrl}/images/spaces/xs.png`, class="space xs" width="5" height="5")
                   tr.hero-header
                     td.logo
@@ -44,20 +44,20 @@ html(lang="en")
                     td.date.content
                       span(class="caption", mc:edit="date") květen 2022
                   tr
-                    td
+                    td(colspan="2")
                       img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
                   tr
-                    td(colspan="2" class="content hero-content layout")
-                      h1(mc:edit="hero-header") Září patří Velvet Innovation 
+                    td(colspan="2" class="content hero-content layout", mc:edit="hero")
+                      h1 Září patří Velvet Innovation 
                       br
-                      p(class="body-text", mc:edit="hero-perex") Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek
+                      p(class="body-text") Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek
                       br
-                      h4(class="body-header", mc:edit="hero-subheader") Top výběr z newsletteru
+                      h4(class="body-header") Top výběr z newsletteru
                       br
                       ul
-                        li(mc:repeatable, mc:edit="hero-bullet") Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
+                        li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
                   tr
-                    td
+                    td(colspan="2")
                       img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
             tr
               td(class="layout")
@@ -75,7 +75,7 @@ html(lang="en")
                           //
                           // Magazine big item
                           //
-                          td(class="grid-item-big" colspan="2", mc:edit="magazine-big-item")
+                          td(class="grid-item-big", mc:edit="magazine-big-item" colspan="2")
                             a(href="https://jic.cz")
                               img(class="cover",src=`${apiUrl}/images/placeholder.png`, width="600" height="600")
                               img(class="space l",src=`${apiUrl}/images/spaces/l.png`, width="20" height="20")
@@ -85,7 +85,7 @@ html(lang="en")
                                     td
                                       img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                     td
-                                      span jic talk
+                                      span.caption jic talk
                                     td
                                       img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                 br
@@ -93,7 +93,7 @@ html(lang="en")
                                 br
                                 p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
                         tr
-                          td.space
+                          td(class="space" colspan="2")
                             img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")
                         tr(mc:repeatable)
                           //
@@ -110,7 +110,7 @@ html(lang="en")
                                           td
                                             img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                           td
-                                            span jic talk
+                                            span.caption jic talk
                                           td
                                             img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                       br
@@ -133,7 +133,7 @@ html(lang="en")
                                           td
                                             img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                           td
-                                            span jic talk
+                                            span.caption jic talk
                                           td
                                             img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                       br
@@ -143,7 +143,7 @@ html(lang="en")
                                 td
                                   img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")                                
                         tr
-                          td
+                          td(colspan="2")
                             img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
                         tr
                           td(colspan="2")
@@ -163,7 +163,7 @@ html(lang="en")
                           //
                           // Events big item
                           //
-                          td(class="grid-item-big" colspan="2", mc:edit="events-big")
+                          td(class="grid-item-big", mc:edit="events-big" colspan="2")
                             a(href="https://jic.cz")
                               img(src=`${apiUrl}/images/placeholder.png`, width="600" height="600")
                               img(class="space l",src=`${apiUrl}/images/spaces/l.png`, width="20" height="20")
@@ -173,7 +173,7 @@ html(lang="en")
                                     td
                                       img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                     td
-                                      span jic talk
+                                      span.caption jic talk
                                     td
                                       img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                 br
@@ -182,12 +182,10 @@ html(lang="en")
                                 p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
                                 br
                                 div(class="info-tags")
-                                  div 19. 2. 2022, 19 – 21 hod.
-                                  divspan brno-medlánky
-                          td
-                            img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")
+                                  div.caption 19. 2. 2022, 19 – 21 hod.
+                                  div.caption brno-medlánky
                         tr
-                          td
+                          td(colspan="2")
                             img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
                         tr(mc:repeatable)
                           // 
@@ -204,7 +202,7 @@ html(lang="en")
                                           td
                                             img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                           td
-                                            span jic talk
+                                            span.caption jic talk
                                           td
                                             img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                       br
@@ -213,8 +211,8 @@ html(lang="en")
                                       p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
                                       br
                                       div(class="info-tags")
-                                        div 19. 2. 2022, 19 – 21 hod.
-                                        div brno-medlánky
+                                        div.caption 19. 2. 2022, 19 – 21 hod.
+                                        div.caption brno-medlánky
                                 td
                                   img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")
                           // 
@@ -231,7 +229,7 @@ html(lang="en")
                                           td
                                             img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                           td
-                                            span jic talk
+                                            span.caption jic talk
                                           td
                                             img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                       br
@@ -240,15 +238,15 @@ html(lang="en")
                                       p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
                                       br
                                       div(class="info-tags")
-                                        div 19. 2. 2022, 19 – 21 hod.
-                                        div brno-medlánky
+                                        div.caption 19. 2. 2022, 19 – 21 hod.
+                                        div.caption brno-medlánky
                                 td
                                   img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")
                         tr
                           td
                             img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
                         tr
-                          td(colspan="2")
+                          td
                             a(class="btn" href="https://www.jic.cz/akce/") 
                               img(src=`${apiUrl}/images/btn-all-events.png`, width="125" height="33")
                 //
@@ -265,7 +263,7 @@ html(lang="en")
                     td(class="section-body margin")
                       table(class="grid")
                         tr
-                          td(class="pelmel" colspan="2")
+                          td(class="pelmel")
                             div(mc:edit="pelmel-item-1")
                               a(href="https://jic.cz") 
                                 h4 Kiwi se vrací do hry
@@ -389,7 +387,7 @@ html(lang="en")
                 div(class="section-body margin")
                   img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")                                
                   p(mc:edit="cta") Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na 
-                    a(href="mailto: marketing@jic.cz") marketing@jic.cz
+                    a(href="mailto:marketing@jic.cz") marketing@jic.cz
                   img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")                                
                   table(class="socials")
                     tr

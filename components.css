@@ -11,15 +11,6 @@
   width: 600px;
 }
 
-u + .body .screen {
-  background: #000;
-  mix-blend-mode: screen;
-}
-u + .body .diff {
-  background: #000;
-  mix-blend-mode: difference;
-}
-
 img {
   height: auto;
   object-fit: contain;
@@ -87,8 +78,7 @@ table {
   font-weight: bold;
 }
 
-.content span,
-.content div {
+.caption {
   font-size: 10px;
   line-height: 1.2em;
   font-weight: bold;

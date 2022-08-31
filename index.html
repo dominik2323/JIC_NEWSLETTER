@@ -20,16 +20,6 @@
         width: 600px;
       }
 
-      u + .body .screen {
-        background: #000;
-        mix-blend-mode: screen;
-      }
-
-      u + .body .diff {
-        background: #000;
-        mix-blend-mode: difference;
-      }
-
       img {
         height: auto;
         object-fit: contain;
@@ -97,8 +87,7 @@
         font-weight: bold;
       }
 
-      .content span,
-      .content div {
+      .caption {
         font-size: 10px;
         line-height: 1.2em;
         font-weight: bold;
@@ -454,30 +443,30 @@
               <td>
                 <table class="hero">
                   <tr>
-                    <td><img class="space xs" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xs.png" width="5" height="5" /></td>
+                    <td colspan="2"><img class="space xs" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xs.png" width="5" height="5" /></td>
                   </tr>
                   <tr class="hero-header">
                     <td class="logo"><img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/jic-logo.png" width="77" height="23" /></td>
                     <td class="date content"><span class="caption" mc:edit="date">květen 2022</span></td>
                   </tr>
                   <tr>
-                    <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                    <td colspan="2"><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
                   </tr>
                   <tr>
-                    <td class="content hero-content layout" colspan="2">
-                      <h1 mc:edit="hero-header">Září patří Velvet Innovation</h1>
+                    <td class="content hero-content layout" colspan="2" mc:edit="hero">
+                      <h1>Září patří Velvet Innovation</h1>
                       <br />
-                      <p class="body-text" mc:edit="hero-perex">Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek</p>
+                      <p class="body-text">Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek</p>
                       <br />
-                      <h4 class="body-header" mc:edit="hero-subheader">Top výběr z newsletteru</h4>
+                      <h4 class="body-header">Top výběr z newsletteru</h4>
                       <br />
                       <ul>
-                        <li mc:repeatable mc:edit="hero-bullet">Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum</li>
+                        <li>Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum</li>
                       </ul>
                     </td>
                   </tr>
                   <tr>
-                    <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                    <td colspan="2"><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
                   </tr>
                 </table>
               </td>
@@ -498,14 +487,14 @@
                           <!---->
                           <!-- Magazine big item-->
                           <!---->
-                          <td class="grid-item-big" colspan="2" mc:edit="magazine-big-item">
+                          <td class="grid-item-big" mc:edit="magazine-big-item" colspan="2">
                             <a href="https://jic.cz"
                               ><img class="cover" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/placeholder.png" width="600" height="600" /><img class="space l" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/l.png" width="20" height="20" />
                               <div class="content">
                                 <table class="tag">
                                   <tr>
                                     <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
-                                    <td><span>jic talk</span></td>
+                                    <td><span class="caption">jic talk</span></td>
                                     <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
                                   </tr>
                                 </table>
@@ -518,7 +507,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td class="space"><img class="space xxxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxxl.png" width="60" height="60" /></td>
+                          <td class="space" colspan="2"><img class="space xxxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxxl.png" width="60" height="60" /></td>
                         </tr>
                         <tr mc:repeatable>
                           <!---->
@@ -533,7 +522,7 @@
                                       <table class="tag">
                                         <tr>
                                           <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
-                                          <td><span>jic talk</span></td>
+                                          <td><span class="caption">jic talk</span></td>
                                           <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
                                         </tr>
                                       </table>
@@ -560,7 +549,7 @@
                                       <table class="tag">
                                         <tr>
                                           <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
-                                          <td><span>jic talk</span></td>
+                                          <td><span class="caption">jic talk</span></td>
                                           <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
                                         </tr>
                                       </table>
@@ -577,7 +566,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                          <td colspan="2"><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
                         </tr>
                         <tr>
                           <td colspan="2">
@@ -602,14 +591,14 @@
                           <!---->
                           <!-- Events big item-->
                           <!---->
-                          <td class="grid-item-big" colspan="2" mc:edit="events-big">
+                          <td class="grid-item-big" mc:edit="events-big" colspan="2">
                             <a href="https://jic.cz"
                               ><img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/placeholder.png" width="600" height="600" /><img class="space l" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/l.png" width="20" height="20" />
                               <div class="content">
                                 <table class="tag">
                                   <tr>
                                     <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
-                                    <td><span>jic talk</span></td>
+                                    <td><span class="caption">jic talk</span></td>
                                     <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
                                   </tr>
                                 </table>
@@ -619,16 +608,15 @@
                                 <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
                                 <br />
                                 <div class="info-tags">
-                                  <div>19. 2. 2022, 19 – 21 hod.</div>
-                                  <divspan>brno-medlánky</divspan>
+                                  <div class="caption">19. 2. 2022, 19 – 21 hod.</div>
+                                  <div class="caption">brno-medlánky</div>
                                 </div>
                               </div>
                             </a>
                           </td>
-                          <td><img class="space m" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/m.png" width="15" height="15" /></td>
                         </tr>
                         <tr>
-                          <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
+                          <td colspan="2"><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
                         </tr>
                         <tr mc:repeatable>
                           <!-- -->
@@ -643,7 +631,7 @@
                                       <table class="tag">
                                         <tr>
                                           <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
-                                          <td><span>jic talk</span></td>
+                                          <td><span class="caption">jic talk</span></td>
                                           <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
                                         </tr>
                                       </table>
@@ -653,8 +641,8 @@
                                       <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
                                       <br />
                                       <div class="info-tags">
-                                        <div>19. 2. 2022, 19 – 21 hod.</div>
-                                        <div>brno-medlánky</div>
+                                        <div class="caption">19. 2. 2022, 19 – 21 hod.</div>
+                                        <div class="caption">brno-medlánky</div>
                                       </div>
                                     </div>
                                   </a>
@@ -675,7 +663,7 @@
                                       <table class="tag">
                                         <tr>
                                           <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
-                                          <td><span>jic talk</span></td>
+                                          <td><span class="caption">jic talk</span></td>
                                           <td><img class="space tag" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/tag-space.png" width="10" height="30" /></td>
                                         </tr>
                                       </table>
@@ -685,8 +673,8 @@
                                       <p>Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.</p>
                                       <br />
                                       <div class="info-tags">
-                                        <div>19. 2. 2022, 19 – 21 hod.</div>
-                                        <div>brno-medlánky</div>
+                                        <div class="caption">19. 2. 2022, 19 – 21 hod.</div>
+                                        <div class="caption">brno-medlánky</div>
                                       </div>
                                     </div>
                                   </a>
@@ -700,7 +688,7 @@
                           <td><img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" /></td>
                         </tr>
                         <tr>
-                          <td colspan="2">
+                          <td>
                             <a class="btn" href="https://www.jic.cz/akce/"> <img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/btn-all-events.png" width="125" height="33" /></a>
                           </td>
                         </tr>
@@ -722,7 +710,7 @@
                     <td class="section-body margin">
                       <table class="grid">
                         <tr>
-                          <td class="pelmel" colspan="2">
+                          <td class="pelmel">
                             <div mc:edit="pelmel-item-1">
                               <a href="https://jic.cz">
                                 <h4>Kiwi se vrací do hry</h4>
@@ -882,7 +870,7 @@
                 <img class="section-header" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/header-footer.png" width="600" height="386" />
                 <div class="section-body margin">
                   <img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" />
-                  <p mc:edit="cta">Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na <a href="mailto: marketing@jic.cz">marketing@jic.cz</a></p>
+                  <p mc:edit="cta">Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na <a href="mailto:marketing@jic.cz">marketing@jic.cz</a></p>
                   <img class="space xxl" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/spaces/xxl.png" width="40" height="40" />
                   <table class="socials">
                     <tr>

@@ -11,6 +11,15 @@
   width: 600px;
 }
 
+table td,
+table td {
+  vertical-align: top;
+}
+table.tag tr,
+table.tag td {
+  vertical-align: middle;
+}
+
 img {
   height: auto;
   object-fit: contain;
@@ -191,6 +200,9 @@ br {
 }
 
 /* GRID */
+.grid {
+  border-spacing: 0 40px;
+}
 .grid-item-big,
 .grid-item-small {
 }

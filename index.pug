@@ -10,404 +10,423 @@ html(lang="en")
       include components.css
     title JIC Newsletter
   body 
-    table(class="newsletter" width="600")
-      tr
-        td(width="10")
-          img(src=`${apiUrl}/images/spaces/s.png`, class="space s" width="10" height="10")
-        td
-          table
-            tr
-              td
-                img(src=`${apiUrl}/images/spaces/xs.png`, class="space xs" width="5" height="5")
-            //
-            // Show in browser
-            //
-            tr(class="show-in-browser")
-              td(class="content.gray-bg")
-                span
-                  a(href="*|ARCHIVE|*" class="gray-text", mc:edit="show-in-browser") Zobrazte si newsletter v prohlížeči
-            tr
-              td
-                img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")
-            //
-            // Hero section
-            //
-            tr
-              td
-                table(class="hero")
-                  tr
-                    td(colspan="2")
-                      img(src=`${apiUrl}/images/spaces/xs.png`, class="space xs" width="5" height="5")
-                  tr.hero-header
-                    td.logo
-                      img(src=`${apiUrl}/images/jic-logo.png`, width="77" height="23")
-                    td.date.content
-                      span(class="caption", mc:edit="date") květen 2022
-                  tr
-                    td(colspan="2")
-                      img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
-                  tr
-                    td(colspan="2" class="content hero-content layout", mc:edit="hero")
-                      h1 Září patří Velvet Innovation 
-                      br
-                      p(class="body-text") Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek
-                      br
-                      h4(class="body-header") Top výběr z newsletteru
-                      br
-                      ul
-                        li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
-                  tr
-                    td(colspan="2")
-                      img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
-            tr
-              td(class="layout")
-                //
-                // Magazine
-                //
-                table(class="section")
-                  tr(class="section-top")
-                    td
-                      img(src=`${apiUrl}/images/header-magazine.png`, class="section-header" width="600" height="226")
-                  tr
-                    td(class="section-body")
-                      table(class="grid")
-                        tr
-                          //
-                          // Magazine big item
-                          //
-                          td(class="grid-item-big", mc:edit="magazine-big-item" colspan="2")
-                            a(href="https://jic.cz")
-                              img(class="cover",src=`${apiUrl}/images/placeholder.png`, width="600" height="600")
-                              img(class="space l",src=`${apiUrl}/images/spaces/l.png`, width="20" height="20")
-                              div(class="content")
-                                table(class="tag") 
-                                  tr
-                                    td
-                                      img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                    td
-                                      span.caption jic talk
-                                    td
-                                      img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                br
-                                h1 Nadpis lorem ipsum
-                                br
-                                p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                        tr(mc:repeatable)
-                          //
-                          // Magazine small item
-                          //
-                          td(class="grid-item-small", mc:edit="magazine-items-col-1")
-                            table
-                              tr
-                                td
-                                  a(href="https://jic.cz")
-                                    div(class="content")
-                                      table(class="tag") 
-                                        tr
-                                          td
-                                            img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                          td
-                                            span.caption jic talk
-                                          td
-                                            img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                      br
-                                      h4 Nadpis lorem ipsum
-                                      br
-                                      p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                                td
-                                  img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")                                
-                          //
-                          // Magazine small item
-                          //
-                          td(class="grid-item-small", mc:edit="magazine-items-col-2")
-                            table
-                              tr
-                                td
-                                  a(href="https://jic.cz")
-                                    div(class="content")
-                                      table(class="tag") 
-                                        tr
-                                          td
-                                            img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                          td
-                                            span.caption jic talk
-                                          td
-                                            img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                      br
-                                      h4 Nadpis lorem ipsum
-                                      br
-                                      p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                                td
-                                  img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")                                
-                        tr
-                          td(colspan="2")
-                            a(class="btn" href="https://www.jic.cz/magazin/") 
-                              img(src=`${apiUrl}/images/btn-all-articles.png`, width="142" height="33")
-                //
-                // Events
-                //
-                table(class="section")
-                  tr
-                    td
-                      img(src=`${apiUrl}/images/header-events.png`, class="section-header" width="600" height="226")
-                  tr
-                    td(class="section-body")
-                      table(class="grid")
-                        tr
-                          //
-                          // Events big item
-                          //
-                          td(class="grid-item-big", mc:edit="events-big" colspan="2")
-                            a(href="https://jic.cz")
-                              img(src=`${apiUrl}/images/placeholder.png`, width="600" height="600")
-                              img(class="space l",src=`${apiUrl}/images/spaces/l.png`, width="20" height="20")
-                              div(class="content")
-                                table(class="tag") 
-                                  tr
-                                    td
-                                      img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                    td
-                                      span.caption jic talk
-                                    td
-                                      img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                br
-                                h1 Nadpis lorem ipsum
-                                br
-                                p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                                br
-                                div(class="info-tags")
-                                  div.caption 19. 2. 2022, 19 – 21 hod.
-                                  div.caption brno-medlánky
-                        tr(mc:repeatable)
-                          // 
-                          // Events small item
-                          //
-                          td(class="grid-item-small", mc:edit="events-items-col-1")
-                            table
-                              tr
-                                td
-                                  a(href="https://jic.cz")
-                                    div(class="content")
-                                      table(class="tag") 
-                                        tr
-                                          td
-                                            img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                          td
-                                            span.caption jic talk
-                                          td
-                                            img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                      br
-                                      h4 Nadpis lorem ipsum
-                                      br
-                                      p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                                      br
-                                      div(class="info-tags")
-                                        div.caption 19. 2. 2022, 19 – 21 hod.
-                                        div.caption brno-medlánky
-                                td
-                                  img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")
-                          // 
-                          // Events small item
-                          //
-                          td(class="grid-item-small", mc:edit="events-items-col-2")
-                            table
-                              tr
-                                td
-                                  a(href="https://jic.cz")
-                                    div(class="content")
-                                      table(class="tag") 
-                                        tr
-                                          td
-                                            img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                          td
-                                            span.caption jic talk
-                                          td
-                                            img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
-                                      br
-                                      h4 Nadpis lorem ipsum
-                                      br
-                                      p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                                      br
-                                      div(class="info-tags")
-                                        div.caption 19. 2. 2022, 19 – 21 hod.
-                                        div.caption brno-medlánky
-                                td
-                                  img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")
-                        tr
-                          td
-                            a(class="btn" href="https://www.jic.cz/akce/") 
-                              img(src=`${apiUrl}/images/btn-all-events.png`, width="125" height="33")
-                //
-                // Pelmel
-                //
-                table(class="section")
-                  tr
-                    td
-                      img(src=`${apiUrl}/images/header-pelmel.png`, class="section-header" width="600" height="295")
-                  tr 
-                    td
-                      img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
-                  tr
-                    td(class="section-body margin")
-                      table(class="grid")
-                        tr
-                          td(class="pelmel")
-                            div(mc:edit="pelmel-item-1")
-                              a(href="https://jic.cz") 
-                                h4 Kiwi se vrací do hry
-                  tr 
-                    td
-                      img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")                                
-                //
-                // Startup
-                //
-                table(class="section")
-                  tr
-                    td
-                      img(src=`${apiUrl}/images/header-startup.png`, class="section-header" width="600" height="295")
-                  tr
-                    td(class="section-body margin")
-                      table(class="grid")
-                        tr(mc:repeatable)
-                          td(class="content")
-                            div(mc:edit="startup-item-1")
-                              img(src=`${apiUrl}/images/spaces/xl.png`, class="space xl" width="30" height="30")                                 
-                              a(class="startup-item" href="https://jic.cz")
-                                h4 Nadpis lorem ipsum
-                                br
-                                p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                              img(src=`${apiUrl}/images/spaces/xl.png`, class="space xl" width="30" height="30")                                 
-                              hr(class="divider")
-                //
-                // Advices
-                //
-                table(class="section")
-                  tr
-                    td
-                      img(src=`${apiUrl}/images/header-advices.png`, class="section-header" width="600" height="226")
-                  tr
-                    td(class="section-body")
-                      table(class="grid")
-                        tr
-                          td(class="advices", mc:edit="human")
-                            table
-                              tr
-                                td
-                                  img(src=`${apiUrl}/images/placeholder.png`, class="human" width="600" height="600")
-                              tr
-                                td
-                                  img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")                                
-                              tr
-                                td(class="quote content")
-                                  img(src=`${apiUrl}/images/quotes.png`, class="quotes" width="24" height="20")
-                              tr
-                                td
-                                  img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")                                
-                              tr
-                                td
-                                  p(class="big") Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů). Lipsum tak pracovně znázorňuje text v ukázkových maketách (tzv. mock-up) předtím, než bude do hotového návrhu vložen smysluplný obsah. 
+    div.main-container
+      table(class="newsletter" width="600")
+        tr
+          td(width="10")
+            img(src=`${apiUrl}/images/spaces/s.png`, class="space s" width="10" height="10")
+          td
+            table
+              tr
+                td
+                  img(src=`${apiUrl}/images/spaces/xs.png`, class="space xs" width="5" height="5")
+              //
+              // Show in browser
+              //
+              tr(class="show-in-browser")
+                td(class="content.gray-bg")
+                  span
+                    a(href="*|ARCHIVE|*" class="gray-text", mc:edit="show-in-browser") Zobrazte si newsletter v prohlížeči
+              tr
+                td
+                  img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")
+              //
+              // Hero section
+              //
+              tr
+                td
+                  table(class="hero")
+                    tr
+                      td(colspan="2")
+                        img(src=`${apiUrl}/images/spaces/xs.png`, class="space xs" width="5" height="5")
+                    tr.hero-header
+                      td.logo
+                        img(src=`${apiUrl}/images/jic-logo.png`, width="77" height="23")
+                      td.date.content
+                        span(class="caption", mc:edit="date") květen 2022
+                    tr
+                      td(colspan="2")
+                        img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
+                    tr
+                      td(colspan="2" class="content hero-content layout")
+                        h1(mc:edit="hero-header") Září patří Velvet Innovation 
+                        br
+                        p(class="body-text", mc:edit="hero-perex") Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek
+                        br
+                        h4(class="body-header", mc:edit="hero-subheader", mc:hideable) Top výběr z newsletteru
+                        br
+                        ul(mc:edit="hero-bullets")
+                          li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
+                    tr
+                      td(colspan="2")
+                        img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
+              tr
+                td(class="layout")
+                  //
+                  // Magazine
+                  //
+                  table(class="section")
+                    tr(class="section-top")
+                      td
+                        img(src=`${apiUrl}/images/header-magazine.png`, class="section-header" width="600" height="226")
+                    tr
+                      td(class="section-body")
+                        table(class="grid")
+                          tr
+                            //
+                            // Magazine big item
+                            //
+                            td(class="grid-item-big" colspan="2")
+                              a(href="https://jic.cz")
+                                img(class="cover",src=`${apiUrl}/images/placeholder.png`, width="600" height="600", mc:edit="magazine-big-item-image" )
+                                img(class="space l",src=`${apiUrl}/images/spaces/l.png`, width="20" height="20")
+                                div(class="content")
+                                  table(class="tag") 
+                                    tr
+                                      td
+                                        img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                      td
+                                        span(class="caption", mc:edit="magazine-big-item-tag") jic talk
+                                      td
+                                        img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
                                   br
-                                  h3 Petr Chládek
-                                  span Ředitel JIC
-            tr
-              td(class="generic-content")
-                //
-                // Generic content
-                //
-                table
-                  //
-                  // Blockquote
-                  //
-                  tr(mc:hideable, mc:repeatable)                
-                    td(class="layout", mc:edit="blockquote")
-                      img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")                                
-                      a(href="https://jic.cz" class="blockquote") 
-                        h2(mc:edit) Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                        br
-                        div(class="btn") 
-                          img(src=`${apiUrl}/images/btn-learn-more.png`, width="105" height="33")
-                      img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")                                
-                  //
-                  // Text block
-                  //
-                  tr(mc:hideable, mc:repeatable)                
-                    td(class="layout", mc:edit="image-text-block")
-                      a(href="https://jic.cz" class="figure-banner") 
-                        div(class="content")
-                          h1 Nadpis textového bloku
-                          br
-                          p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                        br
-                        div(class="btn") 
-                          img(src=`${apiUrl}/images/btn-learn-more.png`, width="105" height="33")
-                        img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")                                
-                  //
-                  // Image text block
-                  //
-                  tr(mc:hideable, mc:repeatable)
-                    td(class="layout", mc:edit="text-block")
-                      a(href="https://jic.cz" class="figure-banner") 
-                        table
+                                  h1(mc:edit="magazine-big-item-header") Nadpis lorem ipsum
+                                  br
+                                  p(mc:edit="magazine-big-item-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
                           tr
-                            td
-                              img(src=`${apiUrl}/images/placeholder.png`, class="cover" width="600" height="600")
+                            td(colspan="2")
+                              img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
+                          tr(mc:repeatable)
+                            //
+                            // Magazine small item
+                            //
+                            td(class="grid-item-small" )
+                              table
+                                tr
+                                  td
+                                    a(href="https://jic.cz")
+                                      div(class="content")
+                                        table(class="tag") 
+                                          tr
+                                            td
+                                              img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                            td
+                                              span(class="caption", mc:edit="magazine-items-col-1-tag") jic talk
+                                            td
+                                              img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                        br
+                                        h4(mc:edit="magazine-items-col-1-header") Nadpis lorem ipsum
+                                        br
+                                        p(mc:edit="magazine-items-col-1-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                                  td
+                                    img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")                                
+                                tr
+                                  td(colspan="2")
+                                    img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
+                            //
+                            // Magazine small item
+                            //
+                            td(class="grid-item-small")
+                              table
+                                tr
+                                  td
+                                    a(href="https://jic.cz")
+                                      div(class="content")
+                                        table(class="tag") 
+                                          tr
+                                            td
+                                              img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                            td
+                                              span(class="caption", mc:edit="magazine-items-col-2-tag") jic talk
+                                            td
+                                              img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                        br
+                                        h4(mc:edit="magazine-items-col-2-header") Nadpis lorem ipsum
+                                        br
+                                        p(mc:edit="magazine-items-col-2-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                                  td
+                                    img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")                                
+                                tr
+                                  td(colspan="2")
+                                    img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
                           tr
-                            td
-                              img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")                                
-                          tr
-                            td
-                              div(class="content")
-                                h1 Nadpis textového bloku
-                                br
-                                p Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                              br
-                              div(class="btn") 
-                                img(src=`${apiUrl}/images/btn-learn-more.png`, width="105" height="33")
-                          tr
-                            td
-                              img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")                                
-            tr
-              //
-              // Footer
-              //
-              td.footer
-                img(src=`${apiUrl}/images/header-footer.png`, class="section-header" width="600" height="386")
-                div(class="section-body margin")
-                  img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")                                
-                  p(mc:edit="cta") Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na 
-                    a(href="mailto:marketing@jic.cz") marketing@jic.cz
-                  img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")                                
-                  table(class="socials")
+                            td(colspan="2")
+                              a(class="btn" href="https://www.jic.cz/magazin/", mc:edit="btn-all-articles") 
+                                img(src=`${apiUrl}/images/btn-all-articles.png`, width="142" height="33")
+                  //
+                  // Events
+                  //
+                  table(class="section")
                     tr
                       td
-                        a(href="https://www.facebook.com/jic.brno") 
-                          img(src=`${apiUrl}/images/fb-dark-cutted.png`, width="15" height="24")
+                        img(src=`${apiUrl}/images/header-events.png`, class="section-header" width="600" height="226")
+                    tr
+                      td(class="section-body")
+                        table(class="grid")
+                          tr
+                            //
+                            // Events big item
+                            //
+                            td(class="grid-item-big" colspan="2")
+                              a(href="https://jic.cz")
+                                img(class="cover", src=`${apiUrl}/images/placeholder.png`, width="600" height="600",  mc:edit="events-big-cover")
+                                img(class="space l",src=`${apiUrl}/images/spaces/l.png`, width="20" height="20")
+                                div(class="content")
+                                  table(class="tag") 
+                                    tr
+                                      td
+                                        img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                      td
+                                        span(class="caption", mc:edit="events-big-tag") jic talk
+                                      td
+                                        img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                  br
+                                  h1(mc:edit="events-big-header") Nadpis lorem ipsum
+                                  br
+                                  p(mc:edit="events-big-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                                  br
+                                  div(class="info-tags", mc:edit="events-big-info")
+                                    div.caption 19. 2. 2022, 19 – 21 hod.
+                                    div.caption brno-medlánky
+                          tr
+                            td(colspan="2")
+                              img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
+                          tr(mc:repeatable)
+                            // 
+                            // Events small item
+                            //
+                            td(class="grid-item-small")
+                              table
+                                tr
+                                  td
+                                    a(href="https://jic.cz")
+                                      div(class="content")
+                                        table(class="tag") 
+                                          tr
+                                            td
+                                              img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                            td
+                                              span(class="caption", mc:edit="events-items-col-1-tag") jic talk
+                                            td
+                                              img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                        br
+                                        h4(mc:edit="events-items-col-1-header") Nadpis lorem ipsum
+                                        br
+                                        p(mc:edit="events-items-col-1-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                                        br
+                                        div(class="info-tags", mc:edit="events-items-col-1-info")
+                                          div.caption 19. 2. 2022, 19 – 21 hod.
+                                          div.caption brno-medlánky
+                                  td
+                                    img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")
+                                tr
+                                  td(colspan="2")
+                                    img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
+                            // 
+                            // Events small item
+                            //
+                            td(class="grid-item-small", mc:edit="events-items-col-2")
+                              table
+                                tr
+                                  td
+                                    a(href="https://jic.cz")
+                                      div(class="content")
+                                        table(class="tag") 
+                                          tr
+                                            td
+                                              img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                            td
+                                              span(class="caption", mc:edit="events-items-col-2-tag") jic talk
+                                            td
+                                              img(src=`${apiUrl}/images/spaces/tag-space.png`, class="space tag" width="10" height="30")
+                                        br
+                                        h4(mc:edit="events-items-col-2-header") Nadpis lorem ipsum
+                                        br
+                                        p(mc:edit="events-items-col-2-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                                        br
+                                        div(class="info-tags", mc:edit="events-items-col-2-info")
+                                          div.caption 19. 2. 2022, 19 – 21 hod.
+                                          div.caption brno-medlánky
+                                  td
+                                    img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")
+                                tr
+                                  td(colspan="2")
+                                    img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
+                          tr
+                            td
+                              a(class="btn" href="https://www.jic.cz/akce/", mc:edit="btn-all-events") 
+                                img(src=`${apiUrl}/images/btn-all-events.png`, width="125" height="33")
+                  //
+                  // Startup
+                  //
+                  table(class="section")
+                    tr
                       td
-                        a(href="https://www.linkedin.com/company/jic-brno/") 
-                          img(src=`${apiUrl}/images/in-dark.png`, width="24" height="24")
+                        img(src=`${apiUrl}/images/header-startup.png`, class="section-header" width="600" height="295")
+                    tr
+                      td(class="section-body margin")
+                        table(class="grid")
+                          tr(mc:repeatable)
+                            td(class="content")
+                              div
+                                img(src=`${apiUrl}/images/spaces/xl.png`, class="space xl" width="30" height="30")                                 
+                                a(class="startup-item" href="https://jic.cz")
+                                  h4(mc:edit="startup-item-1-header") Nadpis lorem ipsum
+                                  br
+                                  p(mc:edit="startup-item-1-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                                img(src=`${apiUrl}/images/spaces/xl.png`, class="space xl" width="30" height="30")                                 
+                                img(class="divider" width="600" height="1", src=`${apiUrl}/images/divider.png`)
+                  //
+                  // Advices
+                  //
+                  table(class="section")
+                    tr
                       td
-                        a(href="https://www.instagram.com/jic_brno/") 
-                          img(src=`${apiUrl}/images/ig-dark.png`, width="24" height="24")
+                        img(src=`${apiUrl}/images/header-advices.png`, class="section-header" width="600" height="226")
+                    tr
+                      td(class="section-body")
+                        table(class="grid")
+                          tr
+                            td(class="advices")
+                              table
+                                tr
+                                  td
+                                    img(src=`${apiUrl}/images/placeholder.png`, class="human" width="600" height="600", mc:edit="human-photo")
+                                tr
+                                  td
+                                    img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")                                
+                                tr
+                                  td(class="quote content")
+                                    img(src=`${apiUrl}/images/quotes.png`, class="quotes" width="24" height="20")
+                                tr
+                                  td
+                                    img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")                                
+                                tr
+                                  td.content
+                                    p(mc:edit="human-perex") Lorem ipsum (zkráceně lipsum) je označení pro standardní pseudolatinský text užívaný v grafickém designu a navrhování jako demonstrativní výplňový text při vytváření pracovních ukázek grafických návrhů (např. internetových stránek, rozvržení časopisů či všech druhů reklamních materiálů). Lipsum tak pracovně znázorňuje text v ukázkových maketách (tzv. mock-up) předtím, než bude do hotového návrhu vložen smysluplný obsah. 
+                                    br
+                                    h3(mc:edit="human-name") Petr Chládek
+                                    span(mc:edit="human-position") Ředitel JIC
+                  //
+                  // Pelmel
+                  //
+                  table(class="section")
+                    tr
                       td
-                        a(href="https://www.youtube.com/user/JICbrno") 
-                          img(src=`${apiUrl}/images/yt-dark.png`, width="24" height="24")
+                        img(src=`${apiUrl}/images/header-pelmel.png`, class="section-header" width="600" height="295")
+                    tr 
                       td
-                        a(href="https://twitter.com/JIC_Brno") 
-                          img(src=`${apiUrl}/images/tw-dark.png`, width="24" height="24")
-            tr
-              td
-                img(src=`${apiUrl}/images/spaces/xl.png`, class="space xl" width="30" height="30")                                
-            //
-            // Unsub
-            //
-            tr
-              td
-                a(href="*|UNSUB|*" class="unsub violet-text", mc:edit="unsub") Pro odhlášení z odběru newsletteru klikněte zde
-            tr
-              td
-                img(src=`${apiUrl}/images/spaces/xl.png`, class="space xl" width="30" height="30")                                
-        td(width="10")
-          img(src=`${apiUrl}/images/spaces/s.png`, class="space" width="10" height="10")
+                        img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")
+                    tr
+                      td(class="section-body margin")
+                        table(class="grid")
+                          tr(mc:repeatable)
+                            td(class="pelmel")
+                              div(mc:edit="pelmel-item-1")
+                                a(href="https://jic.cz") 
+                                  h4 Kiwi se vrací do hry
+                    tr 
+                      td
+                        img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")                                
+              tr
+                td(class="generic-content")
+                  //
+                  // Generic content
+                  //
+                  table
+                    //
+                    // Blockquote
+                    //
+                    tr(mc:hideable, mc:repeatable)                
+                      td(class="layout")
+                        img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")                                
+                        a(href="https://jic.cz" class="blockquote") 
+                          h2(mc:edit="blockquote") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                          br
+                          div(class="btn", mc:edit="btn-learn-more-blockquote") 
+                            img(src=`${apiUrl}/images/btn-learn-more.png`, width="105" height="33")
+                        img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")                                
+                    //
+                    // Text block
+                    //
+                    tr(mc:hideable, mc:repeatable)                
+                      td(class="layout")
+                        a(href="https://jic.cz" class="figure-banner") 
+                          div(class="content")
+                            h1(mc:edit="image-text-block-header") Nadpis textového bloku
+                            br
+                            p(mc:edit="image-text-block-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                          br
+                          div(class="btn", mc:edit="btn-learn-more-blockquote") 
+                            img(src=`${apiUrl}/images/btn-learn-more.png`, width="105" height="33")
+                          img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")                                
+                    //
+                    // Image text block
+                    //
+                    tr(mc:hideable, mc:repeatable)
+                      td(class="layout")
+                        a(href="https://jic.cz" class="figure-banner") 
+                          table
+                            tr
+                              td
+                                img(src=`${apiUrl}/images/placeholder.png`, class="cover" width="600" height="600",  mc:edit="text-block-cover")
+                            tr
+                              td
+                                img(src=`${apiUrl}/images/spaces/m.png`, class="space m" width="15" height="15")                                
+                            tr
+                              td
+                                div(class="content")
+                                  h1(mc:edit="text-block-header") Nadpis textového bloku
+                                  br
+                                  p(mc:edit="text-block-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                                br
+                                div(class="btn", mc:edit="btn-learn-more-text-block") 
+                                  img(src=`${apiUrl}/images/btn-learn-more.png`, width="105" height="33")
+                            tr
+                              td
+                                img(src=`${apiUrl}/images/spaces/xxxl.png`, class="space xxxl" width="60" height="60")                                
+              tr
+                //
+                // Footer
+                //
+                td.footer
+                  img(src=`${apiUrl}/images/header-footer.png`, class="section-header" width="600" height="238")
+                  div(class="section-body margin")
+                    img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")                                
+                    p(mc:edit="cta") Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na 
+                      a(href="mailto:marketing@jic.cz") marketing@jic.cz
+                    img(src=`${apiUrl}/images/spaces/xxl.png`, class="space xxl" width="40" height="40")                                
+                    table(class="socials")
+                      tr
+                        td
+                          a(href="https://www.facebook.com/jic.brno") 
+                            img(src=`${apiUrl}/images/fb-dark-cutted.png`, width="15" height="24")
+                        td
+                          a(href="https://www.linkedin.com/company/jic-brno/") 
+                            img(src=`${apiUrl}/images/in-dark.png`, width="24" height="24")
+                        td
+                          a(href="https://www.instagram.com/jic_brno/") 
+                            img(src=`${apiUrl}/images/ig-dark.png`, width="24" height="24")
+                        td
+                          a(href="https://www.youtube.com/user/JICbrno") 
+                            img(src=`${apiUrl}/images/yt-dark.png`, width="24" height="24")
+                        td
+                          a(href="https://twitter.com/JIC_Brno") 
+                            img(src=`${apiUrl}/images/tw-dark.png`, width="24" height="24")
+              tr
+                td
+                  img(src=`${apiUrl}/images/spaces/xl.png`, class="space xl" width="30" height="30")                                
+              //
+              // Unsub
+              //
+              tr
+                td
+                  a(href="*|UNSUB|*" class="unsub violet-text", mc:edit="unsub") Pro odhlášení z odběru newsletteru klikněte zde
+              tr
+                td
+                  img(src=`${apiUrl}/images/spaces/xl.png`, class="space xl" width="30" height="30")                                
+          td(width="10")
+            img(src=`${apiUrl}/images/spaces/s.png`, class="space" width="10" height="10")
 
 
 

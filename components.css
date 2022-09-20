@@ -6,9 +6,13 @@
   color: #502882;
   box-sizing: border-box;
 }
+.main-container {
+  width: 100%;
+}
 
 .newsletter {
   width: 600px;
+  margin: auto;
 }
 
 table td,
@@ -47,49 +51,47 @@ table {
 .content h1 {
   font-size: 24px;
   font-weight: bold;
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 .content h2 {
   font-size: 18px;
-  line-height: 1.2em;
+  line-height: 1.3em;
   font-weight: bold;
 }
 
 .content h3 {
   font-size: 16px;
   font-weight: bold;
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 .content p.big {
   font-size: 14px;
-  line-height: 1.2em;
+  line-height: 1.3em;
   font-weight: normal;
 }
 
 .content p,
 .content li {
   font-size: 12px;
-  line-height: 1.2em;
+  line-height: 1.3em;
   font-weight: normal;
   text-decoration: none;
 }
 
 .content li {
-  list-style: none;
-  padding: 0.25em 0;
 }
 
 .content h4 {
   font-size: 14px;
-  line-height: 1.2em;
+  line-height: 1.3em;
   font-weight: bold;
 }
 
 .caption {
   font-size: 10px;
-  line-height: 1.2em;
+  line-height: 1.3em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -187,6 +189,9 @@ br {
   font-size: 30px;
   width: 80%;
 }
+.hero h4 {
+  font-size: 18px;
+}
 .hero .body-text {
   font-size: 18px;
 }
@@ -196,12 +201,18 @@ br {
 
 .hero-content > * {
 }
-.hero-content {
+
+.hero-content li {
+  font-size: 18px;
+}
+.hero-content ul {
+  padding-left: 1em;
+  list-style: disc;
 }
 
 /* GRID */
 .grid {
-  border-spacing: 0 40px;
+  /* border-spacing: 0 40px; */
 }
 .grid-item-big,
 .grid-item-small {
@@ -243,8 +254,10 @@ br {
   background-color: #502882;
   width: auto;
   text-transform: uppercase;
+  color: white;
 }
-.tag span {
+
+.tag * {
   color: white;
 }
 
@@ -325,9 +338,8 @@ a.btn-secondary img {
 }
 
 .divider {
-  background-color: #502882;
+  width: 600px;
   height: 1px;
-  border: 0;
 }
 .divider:last-child {
   opacity: 0;
@@ -400,4 +412,12 @@ a.btn-secondary img {
 .advices .human {
   width: 600px !important;
   height: auto !important;
+}
+
+.advices .content h3 {
+  font-size: 13px;
+}
+
+.advices .content span {
+  font-size: 13px;
 }

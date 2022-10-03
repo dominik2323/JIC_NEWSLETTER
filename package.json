@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "pug -w -O data.development.json index.pug",
-    "build": "pug -w -O data.production.json index.pug",
+    "build": "pug -w -P -O data.production.json index.pug",
     "build-inline": "pug -O data.production.json index.pug && node inlineCss.js",
     "generate": "node inlineCss.js"
   },

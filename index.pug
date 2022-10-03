@@ -35,14 +35,14 @@ html(lang="en")
                   tr
                     td
                       table(class="hero" cellspacing="0" cellspadding="0" border="0")
-                        tr(height="5")
+                        tr(style="height:5px")
                           td(colspan="2")
                         tr.hero-header
                           td.logo
                             img(src=`${apiUrl}/images/jic-logo.png`, width="77" height="23")
                           td.date.content
                             span(class="caption", mc:edit="date") květen 2022
-                        tr(height="40")
+                        tr(style="height:80px")
                           td(colspan="2")
                         tr
                           td(colspan="2" class="content hero-content layout")
@@ -54,7 +54,7 @@ html(lang="en")
                             br
                             ul(mc:edit="hero-bullets")
                               li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
-                        tr(height="40")
+                        tr(style="height:40px")
                           td(colspan="2")
                   tr
                     td(class="layout")
@@ -77,13 +77,13 @@ html(lang="en")
                                     tr
                                       td
                                         img(class="cover",src=`${apiUrl}/images/placeholder.png`, width="600" height="600", mc:edit="magazine-big-item-image" )
-                                    tr(height="20")
+                                    tr(style="height:20px")
                                       td
                                     tr
                                       td
                                         div(class="content")
                                           table(class="tag" cellspacing="0" cellspadding="0" border="0") 
-                                            tr(height="30")
+                                            tr(style="height:30px")
                                               td(width="10" style="width:10px")
                                               td
                                                 span(class="caption", mc:edit="magazine-big-item-tag") jic talk
@@ -92,7 +92,7 @@ html(lang="en")
                                           h1(mc:edit="magazine-big-item-header") Nadpis lorem ipsum
                                           br
                                           p(mc:edit="magazine-big-item-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                              tr(height="40")
+                              tr(style="height:40px")
                                 td(colspan="2")
                               tr(mc:repeatable)
                                 //
@@ -104,7 +104,7 @@ html(lang="en")
                                       td
                                         div(class="content")
                                           table(class="tag" cellspacing="0" cellspadding="0" border="0") 
-                                            tr(height="30")
+                                            tr(style="height:30px")
                                               td(width="10" style="width:10px")
                                               td
                                                 span(class="caption", mc:edit="magazine-items-col-1-tag") jic talk
@@ -126,7 +126,7 @@ html(lang="en")
                                       td
                                         div(class="content")
                                           table(class="tag" cellspacing="0" cellspadding="0" border="0") 
-                                            tr(height="30")
+                                            tr(style="height:30px")
                                               td(width="10" style="width:10px")
                                               td
                                                 span(class="caption", mc:edit="magazine-items-col-2-tag") jic talk
@@ -135,8 +135,8 @@ html(lang="en")
                                           h4(mc:edit="magazine-items-col-2-header") Nadpis lorem ipsum
                                           br
                                           p(mc:edit="magazine-items-col-2-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                                      td(width="15" style="15px")
-                                    tr(height="40")
+                                      td(width="15" style="width:15px")
+                                    tr(style="height:40px")
                                       td(colspan="2")
                               tr
                                 td(colspan="2")
@@ -163,12 +163,13 @@ html(lang="en")
                                     tr
                                       td
                                         img(class="cover", src=`${apiUrl}/images/placeholder.png`, width="600" height="600",  mc:edit="events-big-cover")
-                                    tr(height="20")
+                                    tr(style="height:20px")
+                                      td
                                     tr
                                       td
                                         div(class="content")
                                           table(class="tag" cellspacing="0" cellspadding="0" border="0") 
-                                            tr(height="30")
+                                            tr(style="height:30px")
                                               td(width="10" style="width:10px")
                                               td
                                                 span(class="caption", mc:edit="events-big-tag") jic talk
@@ -181,7 +182,7 @@ html(lang="en")
                                           div(class="info-tags", mc:edit="events-big-info")
                                             div.caption 19. 2. 2022, 19 – 21 hod.
                                             div.caption brno-medlánky
-                              tr(height="40")
+                              tr(style="height:40px")
                                 td(colspan="2")
                               tr(mc:repeatable)
                                 // 
@@ -193,7 +194,7 @@ html(lang="en")
                                       td
                                         div(class="content")
                                           table(class="tag" cellspacing="0" cellspadding="0" border="0") 
-                                            tr(height="30")
+                                            tr(style="height:30px")
                                               td(width="10" style="width:10px")
                                               td
                                                 span(class="caption", mc:edit="events-items-col-1-tag") jic talk
@@ -207,18 +208,18 @@ html(lang="en")
                                             div.caption 19. 2. 2022, 19 – 21 hod.
                                             div.caption brno-medlánky
                                       td(width="15" style="width:15px")
-                                    tr(height="40")
+                                    tr(style="height:40px")
                                       td(colspan="2")
                                 // 
                                 // Events small item
                                 //
                                 td(class="grid-item-small")
-                                  table( cellspacing="0" cellspadding="0" border="0")
+                                  table(cellspacing="0" cellspadding="0" border="0")
                                     tr
                                       td
                                         div(class="content")
                                           table(class="tag" cellspacing="0" cellspadding="0" border="0") 
-                                            tr(height="30")
+                                            tr(style="height:30px")
                                               td(width="10" style="width:10px")
                                               td
                                                 span(class="caption", mc:edit="events-items-col-2-tag") jic talk
@@ -232,10 +233,10 @@ html(lang="en")
                                             div.caption 19. 2. 2022, 19 – 21 hod.
                                             div.caption brno-medlánky
                                       td(width="15" style="width:15px")
-                                    tr(height="40")
+                                    tr(style="height:40px")
                                       td(colspan="2")
                               tr
-                                td
+                                td(colspan="2")
                                   span(class="btn", mc:edit="btn-all-events") 
                                     img(src=`${apiUrl}/images/btn-all-events.png`, width="125" height="33")
                       //
@@ -248,23 +249,23 @@ html(lang="en")
                         tr
                           td(class="section-body margin")
                             table(class="grid startup" cellspacing="0" cellspadding="0" border="0" width="100%")
+                              tr(style="height:30px")
+                                td
                               tr(mc:repeatable)
                                 td(class="content")
                                   table
-                                    tr(height="30")
-                                      td
                                     tr
                                       td
                                         span(class="startup-item" href="https://jic.cz")
                                           h4(mc:edit="startup-item-1-header") Nadpis lorem ipsum
                                           br
                                           p(mc:edit="startup-item-1-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                                    tr(height="30")
+                                    tr(style="height:30px")
                                       td
                                     tr
                                       td
                                         img(class="divider" width="600" height="2", src=`${apiUrl}/images/divider.png`)
-                                    tr(height="30")
+                                    tr(style="height:30px")
                                       td
                       //
                       // Advices
@@ -282,12 +283,12 @@ html(lang="en")
                                     tr
                                       td
                                         img(src=`${apiUrl}/images/placeholder.png`, class="human" width="600" height="600", mc:edit="human-photo")
-                                    tr(height="40")
+                                    tr(style="height:40px")
                                       td
                                     tr
                                       td(class="quote content")
                                         img(src=`${apiUrl}/images/quotes.png`, class="quotes" width="24" height="20")
-                                    tr(height="15")
+                                    tr(style="height:15px")
                                       td
                                     tr
                                       td.content
@@ -302,7 +303,7 @@ html(lang="en")
                         tr
                           td
                             img(src=`${apiUrl}/images/header-pelmel.png`, class="section-header" width="600" height="295")
-                        tr(height="40")
+                        tr(style="height:40px")
                           td
                         tr
                           td(class="section-body margin")
@@ -311,7 +312,7 @@ html(lang="en")
                                 td(class="pelmel")
                                   div(mc:edit="pelmel-item-1")
                                     h4 Kiwi se vrací do hry
-                        tr(height="40")
+                        tr(style="height:40px")
                           td
                   tr
                     td(class="generic-content")
@@ -325,16 +326,19 @@ html(lang="en")
                         tr(mc:hideable, mc:repeatable)                
                           td(class="layout")
                             table(cellspacing="0" cellspadding="0" border="0")
-                              tr(height="60")
+                              tr(style="height:60px")
                                 td
                               tr
                                 td
                                   span(class="blockquote") 
                                     h2(mc:edit="blockquote") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                                    br
-                                    div(class="btn", mc:edit="btn-learn-more-blockquote") 
-                                      img(src=`${apiUrl}/images/btn-learn-more.png`, width="105" height="33")
-                              tr(height="60")
+                              tr(style="height:15px")
+                                td
+                              tr
+                                td
+                                  div(class="btn", mc:edit="btn-learn-more-blockquote") 
+                                    img(src=`${apiUrl}/images/btn-learn-more.png`, width="105" height="33")
+                              tr(style="height:60px")
                                 td
                         //
                         // Text block
@@ -347,12 +351,18 @@ html(lang="en")
                                   td
                                     div(class="content")
                                       h1(mc:edit="image-text-block-header") Nadpis textového bloku
-                                      br
-                                      p(mc:edit="image-text-block-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                                    br
+                                tr(style="height:15px")
+                                  td
+                                tr
+                                  td
+                                    p(mc:edit="image-text-block-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                                tr(style="height:15px")
+                                  td
+                                tr
+                                  td
                                     div(class="btn", mc:edit="btn-learn-more-blockquote") 
                                       img(src=`${apiUrl}/images/btn-learn-more.png`, width="105" height="33")
-                                tr(height="60")
+                                tr(style="height:60px")
                                   td
                         //
                         // Image text block
@@ -363,18 +373,24 @@ html(lang="en")
                               tr
                                 td
                                   img(src=`${apiUrl}/images/placeholder.png`, class="cover" width="600" height="600",  mc:edit="text-block-cover")
-                              tr(height="15")
+                              tr(style="height:15px")
                                 td
                               tr
                                 td
                                   div(class="content")
                                     h1(mc:edit="text-block-header") Nadpis textového bloku
-                                    br
-                                    p(mc:edit="text-block-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
-                                  br
+                              tr(style="height:15px")
+                                td
+                              tr
+                                td
+                                  p(mc:edit="text-block-perex") Jsme inovační agentura a poskytujeme služby vedoucí k podpoře podnikatelů a studentů s touhou podnikat.
+                              tr(style="height:15px")
+                                td
+                              tr
+                                td
                                   div(class="btn", mc:edit="btn-learn-more-text-block") 
                                     img(src=`${apiUrl}/images/btn-learn-more.png`, width="105" height="33")
-                              tr(height="60")
+                              tr(style="height:60px")
                                 td
                   tr
                     //
@@ -384,14 +400,14 @@ html(lang="en")
                       img(src=`${apiUrl}/images/header-footer.png`, class="section-header" width="600" height="238")
                       div(class="section-body margin")
                         table
-                          tr(height="40")
+                          tr(style="height:40px")
                             td
                           tr
                             td
                               p(mc:edit="cta") Chceš vědět víc o tom, co děláme? Mrkněte na naše webovky nebo nám napište na 
                                 a(href="mailto:marketing@jic.cz") marketing@jic.cz
                           tr
-                            td(height="40")
+                            td(style="height:40px")
                           tr
                             td
                               table(class="socials" cellspacing="0" cellspadding="0" border="0")
@@ -411,7 +427,7 @@ html(lang="en")
                                   td
                                     a(href="https://twitter.com/JIC_Brno") 
                                       img(src=`${apiUrl}/images/tw-dark.png`, width="24" height="24")
-                  tr(height="30")
+                  tr(style="height:30px")
                     td
                   //
                   // Unsub
@@ -419,6 +435,6 @@ html(lang="en")
                   tr
                     td
                       a(href="*|UNSUB|*" class="unsub violet-text", mc:edit="unsub") Pro odhlášení z odběru newsletteru klikněte zde
-                  tr(height="30")
+                  tr(style="height:30px")
                     td
         td(width="10" style="width:10px")

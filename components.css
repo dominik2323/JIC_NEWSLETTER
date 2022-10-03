@@ -16,12 +16,6 @@
   min-width: 320px;
 }
 
-/* .newsletter {
-  max-width: 600px;
-  margin: auto;
-  width: 100%;
-} */
-
 table td,
 table td {
   vertical-align: top;
@@ -353,6 +347,10 @@ a.btn-secondary img {
 .advices .human {
   width: 100% !important;
   height: auto !important;
+}
+
+.human-position {
+  display: block;
 }
 
 .advices .content h3 {

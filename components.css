@@ -183,6 +183,10 @@ br {
   vertical-align: top;
 }
 
+.date-content {
+  text-align: right;
+}
+
 .hero h1 {
   font-size: 30px;
   width: 80%;

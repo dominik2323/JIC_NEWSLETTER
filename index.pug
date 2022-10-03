@@ -34,35 +34,42 @@ html(lang="en")
                   //
                   tr
                     td
-                      table(class="hero" cellspacing="0" cellspadding="0" border="0")
+                      table(cellspacing="0" cellspadding="0" border="0" width="100%")
                         tr(style="height:5px")
                           td(colspan="2")
                         tr.hero-header
                           td.logo
                             img(src=`${apiUrl}/images/jic-logo.png`, width="77" height="23")
                           td.date.content
-                            span(class="caption", mc:edit="date") květen 2022
+                            p(class="caption date-content", mc:edit="date") květen 2022
                         tr(style="height:80px")
                           td(colspan="2")
-                        tr
-                          td(colspan="2" class="content hero-content layout")
-                            h1(mc:edit="hero-header") Září patří Velvet Innovation 
-                        tr(style="height:15px")
-                          td
+                  tr
+                    td
+                      table(class="hero" cellspacing="0" cellspadding="0" border="0" width="100%")
                         tr
                           td
-                            p(class="body-text", mc:edit="hero-perex") Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek
-                        tr(style="height:15px")
-                          td
-                        tr
-                          td
-                            h4(class="body-header", mc:edit="hero-subheader", mc:hideable) Top výběr z newsletteru
-                        tr(style="height:15px")
-                          td
-                        tr
-                          td
-                            ul(mc:edit="hero-bullets")
-                              li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
+                            table(cellspacing="0" cellspadding="0" border="0" width="100%")
+                              tr
+                                td(colspan="2" class="content hero-content layout")
+                                  h1(mc:edit="hero-header") Září patří Velvet Innovation 
+                              tr(style="height:15px")
+                                td
+                              tr
+                                td
+                                  p(class="body-text", mc:edit="hero-perex") Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek
+                              tr(style="height:15px")
+                                td
+                              tr
+                                td
+                                  h4(class="body-header", mc:edit="hero-subheader", mc:hideable) Top výběr z newsletteru
+                              tr(style="height:15px")
+                                td
+                              tr
+                                td
+                                  ul(mc:edit="hero-bullets")
+                                    li Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum
+                          td(width="30px" style="width:60px")
                         tr(style="height:40px")
                           td(colspan="2")
                   tr
@@ -364,6 +371,8 @@ html(lang="en")
                                     tr
                                       td
                                         h3(mc:edit="human-name") Petr Chládek
+                                    tr(style="height:5px")
+                                      td
                                     tr
                                       td
                                         span(mc:edit="human-position") Ředitel JIC
@@ -374,7 +383,7 @@ html(lang="en")
                         tr
                           td
                             img(src=`${apiUrl}/images/pelmel-header-1.png`, class="section-header" width="600" height="290")
-                        tr(style="height:40px")
+                        tr(style="height:30px")
                           td
                         tr
                           td(class="section-body margin")
@@ -382,7 +391,14 @@ html(lang="en")
                               tr(mc:repeatable)
                                 td(class="pelmel")
                                   div(mc:edit="pelmel-item-1")
-                                    h4 Kiwi se vrací do hry
+                                    table
+                                      tr(style="height:5px")
+                                        td
+                                      tr
+                                        td
+                                          h4 Kiwi se vrací do hry
+                                      tr(style="height:5px")
+                                        td
                         tr(style="height:40px")
                           td
                   tr

@@ -191,6 +191,10 @@ br {
   vertical-align: top;
 }
 
+.date-content {
+  text-align: right;
+}
+
 .hero h1 {
   font-size: 30px;
   width: 80%;
@@ -398,47 +402,62 @@ a.btn-secondary img {
                   <!---->
                   <tr>
                     <td>
-                      <table class="hero" cellspacing="0" cellspadding="0" border="0">
+                      <table cellspacing="0" cellspadding="0" border="0" width="100%">
                         <tr style="height:5px">
                           <td colspan="2"></td>
                         </tr>
                         <tr class="hero-header">
                           <td class="logo"><img src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/jic-logo.png" width="77" height="23"></td>
-                          <td class="date content"><span class="caption" mc:edit="date">květen 2022</span></td>
+                          <td class="date content">
+                            <p class="caption date-content" mc:edit="date">květen 2022</p>
+                          </td>
                         </tr>
                         <tr style="height:80px">
                           <td colspan="2"></td>
                         </tr>
-                        <tr>
-                          <td class="content hero-content layout" colspan="2">
-                            <h1 mc:edit="hero-header">Září patří Velvet Innovation </h1>
-                          </td>
-                        </tr>
-                        <tr style="height:15px">
-                          <td></td>
-                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="hero" cellspacing="0" cellspadding="0" border="0" width="100%">
                         <tr>
                           <td>
-                            <p class="body-text" mc:edit="hero-perex">Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek</p>
+                            <table cellspacing="0" cellspadding="0" border="0" width="100%">
+                              <tr>
+                                <td class="content hero-content layout" colspan="2">
+                                  <h1 mc:edit="hero-header">Září patří Velvet Innovation </h1>
+                                </td>
+                              </tr>
+                              <tr style="height:15px">
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p class="body-text" mc:edit="hero-perex">Jedno místo, stovky inspirativních osobností a spousta skvělých přednášek</p>
+                                </td>
+                              </tr>
+                              <tr style="height:15px">
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <h4 class="body-header" mc:edit="hero-subheader" mc:hideable>Top výběr z newsletteru</h4>
+                                </td>
+                              </tr>
+                              <tr style="height:15px">
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <ul mc:edit="hero-bullets">
+                                    <li>Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
-                        </tr>
-                        <tr style="height:15px">
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <h4 class="body-header" mc:edit="hero-subheader" mc:hideable>Top výběr z newsletteru</h4>
-                          </td>
-                        </tr>
-                        <tr style="height:15px">
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <ul mc:edit="hero-bullets">
-                              <li>Hanka Šudáková si do JICtalku pozvala Jirku Kobelku z Tatum</li>
-                            </ul>
-                          </td>
+                          <td width="30px" style="width:60px"></td>
                         </tr>
                         <tr style="height:40px">
                           <td colspan="2"></td>
@@ -882,6 +901,9 @@ a.btn-secondary img {
                                         <h3 mc:edit="human-name">Petr Chládek</h3>
                                       </td>
                                     </tr>
+                                    <tr style="height:5px">
+                                      <td></td>
+                                    </tr>
                                     <tr>
                                       <td><span mc:edit="human-position">Ředitel JIC</span></td>
                                     </tr>
@@ -899,7 +921,7 @@ a.btn-secondary img {
                         <tr>
                           <td><img class="section-header" src="https://cdn.jsdelivr.net/gh/dominik2323/JIC_NEWSLETTER@latest/images/pelmel-header-1.png" width="600" height="290"></td>
                         </tr>
-                        <tr style="height:40px">
+                        <tr style="height:30px">
                           <td></td>
                         </tr>
                         <tr>
@@ -908,7 +930,19 @@ a.btn-secondary img {
                               <tr mc:repeatable>
                                 <td class="pelmel">
                                   <div mc:edit="pelmel-item-1">
-                                    <h4>Kiwi se vrací do hry</h4>
+                                    <table>
+                                      <tr style="height:5px">
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <h4>Kiwi se vrací do hry</h4>
+                                        </td>
+                                      </tr>
+                                      <tr style="height:5px">
+                                        <td></td>
+                                      </tr>
+                                    </table>
                                   </div>
                                 </td>
                               </tr>
